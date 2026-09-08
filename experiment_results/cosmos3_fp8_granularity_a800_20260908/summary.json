@@ -1,0 +1,101 @@
+{
+  "experiment": "cosmos3_fp8_granularity_a800_600_1000_v1",
+  "alignment_steps": [
+    601,
+    1000
+  ],
+  "variants": [
+    {
+      "variant": "dense",
+      "n_steps": 400,
+      "final_step": 1000,
+      "final_action_loss": 0.007955353707075119,
+      "last20_mean": 0.013795811007730663,
+      "mae_vs_dense": 0.0,
+      "mape_vs_dense_pct": 0.0,
+      "max_abs_error_vs_dense": 0.0,
+      "max_error_step": 601,
+      "mean_step_time": 5.236168523085653,
+      "mean_samples_per_sec": 0.2680385875616564,
+      "nan_iterations_total": 0,
+      "skipped_iterations_total": 0
+    },
+    {
+      "variant": "gradient_row",
+      "n_steps": 400,
+      "final_step": 1000,
+      "final_action_loss": 0.009876895695924759,
+      "last20_mean": 0.01372354761697352,
+      "mae_vs_dense": 0.002910446447785944,
+      "mape_vs_dense_pct": 18.323433534643012,
+      "max_abs_error_vs_dense": 0.039553992450237274,
+      "max_error_step": 835,
+      "mean_step_time": 9.505217244029046,
+      "mean_samples_per_sec": 0.11717173990355917,
+      "nan_iterations_total": 0,
+      "skipped_iterations_total": 0
+    },
+    {
+      "variant": "gradient_column",
+      "n_steps": 400,
+      "final_step": 1000,
+      "final_action_loss": 0.010228456929326057,
+      "last20_mean": 0.014637265214696526,
+      "mae_vs_dense": 0.002643209853558801,
+      "mape_vs_dense_pct": 15.999797256879694,
+      "max_abs_error_vs_dense": 0.0528523288667202,
+      "max_error_step": 835,
+      "mean_step_time": 13.061835140683106,
+      "mean_samples_per_sec": 0.08041749541632105,
+      "nan_iterations_total": 0,
+      "skipped_iterations_total": 0
+    },
+    {
+      "variant": "gradient_block",
+      "n_steps": 400,
+      "final_step": 1000,
+      "final_action_loss": 0.00816679559648037,
+      "last20_mean": 0.016006477060727775,
+      "mae_vs_dense": 0.0031882689986377955,
+      "mape_vs_dense_pct": 21.444653880551602,
+      "max_abs_error_vs_dense": 0.047918833792209625,
+      "max_error_step": 835,
+      "mean_step_time": 7.292135593035491,
+      "mean_samples_per_sec": 0.16647176249650708,
+      "nan_iterations_total": 0,
+      "skipped_iterations_total": 0
+    },
+    {
+      "variant": "per_tensor",
+      "n_steps": 400,
+      "final_step": 1000,
+      "final_action_loss": 0.00687020318582654,
+      "last20_mean": 0.012663916917517781,
+      "mae_vs_dense": 0.0028666485915891824,
+      "mape_vs_dense_pct": 18.332439859518942,
+      "max_abs_error_vs_dense": 0.06357405334711075,
+      "max_error_step": 811,
+      "mean_step_time": 6.733843667058973,
+      "mean_samples_per_sec": 0.18007892388731492,
+      "nan_iterations_total": 0,
+      "skipped_iterations_total": 0
+    }
+  ],
+  "route_counts": {
+    "row": 0,
+    "column": 6,
+    "block": 253
+  },
+  "route_bytes": {
+    "row": 0,
+    "column": 335806464,
+    "block": 13628342272
+  },
+  "route_total_bytes": 13964148736,
+  "route_byte_share": {
+    "row": 0.0,
+    "column": 0.024047757607614184,
+    "block": 0.9759522423923858
+  },
+  "route_calibration_steps": 20
+}

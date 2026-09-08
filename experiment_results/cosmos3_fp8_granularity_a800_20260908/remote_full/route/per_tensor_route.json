@@ -1,0 +1,3634 @@
+{
+  "calibration_steps": 20,
+  "route": {
+    "net.action2llm.bias.weight": "column",
+    "net.action2llm.fc.weight": "column",
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "column",
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "column",
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "column",
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": "block",
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": "block",
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": "block",
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": "block",
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": "block",
+    "net.llm2action.fc.weight": "column",
+    "net.llm2vae.weight": "block",
+    "net.time_embedder.mlp.0.weight": "block",
+    "net.time_embedder.mlp.2.weight": "block",
+    "net.vae2llm.weight": "block"
+  },
+  "scores": {
+    "net.action2llm.bias.weight": {
+      "block": 0.0005196768585812317,
+      "bytes": 262144,
+      "chosen": "column",
+      "column": 3.571134741516684e-15,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006921893724494931,
+      "runner_up_gap": 519676858.57766056,
+      "shape": [
+        32,
+        4096
+      ]
+    },
+    "net.action2llm.fc.weight": {
+      "block": 0.0005200889286894441,
+      "bytes": 16777216,
+      "chosen": "column",
+      "column": 3.5408441198484648e-15,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006950026217180928,
+      "runner_up_gap": 520088928.6859032,
+      "shape": [
+        32,
+        262144
+      ]
+    },
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.00010665541466581215,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006814030768419036,
+      "dtype": "torch.bfloat16",
+      "row": 0.000589799335662563,
+      "runner_up_gap": 4.529952112704318,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0002852204121950665,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006035527187197359,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005924917533342441,
+      "runner_up_gap": 1.077311889336413,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0003056384060887216,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0005817994977605651,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006086993988603717,
+      "runner_up_gap": 0.9035549399890491,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00015989453030044169,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0005249458385776023,
+      "dtype": "torch.bfloat16",
+      "row": 0.000544778058962686,
+      "runner_up_gap": 2.2830756473734874,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0005150553410433128,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006796487638653132,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006174070537603511,
+      "runner_up_gap": 0.19871983563884887,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00022737928359850277,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.00048385231794673123,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005639100659128331,
+      "runner_up_gap": 1.1279525130402746,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.0._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0001311741505260528,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006557995566506272,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005242700000372601,
+      "runner_up_gap": 2.9967478190997214,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 9.322077536432052e-05,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000668126011644973,
+      "dtype": "torch.bfloat16",
+      "row": 0.000613632136046925,
+      "runner_up_gap": 5.582568463400571,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.00019212243302339254,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000540854331702979,
+      "dtype": "torch.bfloat16",
+      "row": 0.00041592713428519247,
+      "runner_up_gap": 1.1649066573841995,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00023468876841083386,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006542553728458625,
+      "dtype": "torch.bfloat16",
+      "row": 0.00047746357948772,
+      "runner_up_gap": 1.034454323148082,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00020923027758224858,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0005442331338082829,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006002966616037856,
+      "runner_up_gap": 1.6011203545545385,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.000542629329392722,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006640025058594068,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006638444485127461,
+      "runner_up_gap": 0.2233847537428188,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00026740003232319956,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0005538800876167395,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006215360053006399,
+      "runner_up_gap": 1.0713538543902599,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.1._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00019232653833226498,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006800263862514504,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005975312014831945,
+      "runner_up_gap": 2.1068577777388913,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005783636465673544,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006880501369363818,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006929215675231207,
+      "runner_up_gap": 0.1896496970721234,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005336398027118855,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006841183397044858,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006480573977110454,
+      "runner_up_gap": 0.2144097843108874,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0005357307646279931,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006887943632580599,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006471541427322002,
+      "runner_up_gap": 0.20798390807662243,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.000448068022083837,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006498749659511506,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005917668730073635,
+      "runner_up_gap": 0.320707669016914,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006221704330031565,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006857422479634744,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006871135596197804,
+      "runner_up_gap": 0.10217749283498251,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.000390961796821867,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006481514262939434,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005592576271982928,
+      "runner_up_gap": 0.43046617788363106,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.10._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002912566191455808,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006881492005598215,
+      "dtype": "torch.bfloat16",
+      "row": 0.000498976269815938,
+      "runner_up_gap": 0.7131843090114672,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005893697186592036,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006889313996087813,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006929961846565823,
+      "runner_up_gap": 0.16892907422538983,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004906191419976026,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006758452826184805,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006204311404445792,
+      "runner_up_gap": 0.26458812413725796,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00048751090546377023,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000680383034705997,
+      "dtype": "torch.bfloat16",
+      "row": 0.000618131032532169,
+      "runner_up_gap": 0.26793272848766225,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0005265482857341228,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.000677160263241046,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006422717824096633,
+      "runner_up_gap": 0.21977755850861197,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006043094555021917,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006858984118509235,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006863557384106897,
+      "runner_up_gap": 0.13501188109150133,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00046500869352979874,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006804873710272056,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006064834620982608,
+      "runner_up_gap": 0.3042411261057339,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.11._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0003214661345779286,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006922324990455866,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005403537588302472,
+      "runner_up_gap": 0.68090414730531,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005865280998441264,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006903577671015827,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006911513139842203,
+      "runner_up_gap": 0.17702419932659624,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.00047574659167202185,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006780962254720823,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006171273501648394,
+      "runner_up_gap": 0.2971766082357663,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00047022326127445956,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006890690474540986,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006134620876002267,
+      "runner_up_gap": 0.30461875904978175,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0004100815963800473,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006469255584864717,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006022016609586346,
+      "runner_up_gap": 0.46849228610722166,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006147474365091203,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006865645443192409,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006868500076557467,
+      "runner_up_gap": 0.11682376134488383,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0003581093044351263,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006158445992145089,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005681240971225232,
+      "runner_up_gap": 0.5864544430608122,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.12._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00025043816164366,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006835812258191586,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005192066891332316,
+      "runner_up_gap": 1.07319318160462,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005830170440521592,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006925914025858957,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006927129704145735,
+      "runner_up_gap": 0.1879436624565191,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004592359910836625,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006683454343408674,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006138357012423355,
+      "runner_up_gap": 0.33664545715126326,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00045431012955278645,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006868382335836516,
+      "dtype": "torch.bfloat16",
+      "row": 0.000609679895450216,
+      "runner_up_gap": 0.3419905386005203,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00043756987415573116,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006466306557492621,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005963256689595954,
+      "runner_up_gap": 0.36281244249315714,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006031007052245854,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006895906884899365,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006866699872917487,
+      "runner_up_gap": 0.13856604932345978,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00037208219610056204,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006709314166445078,
+      "dtype": "torch.bfloat16",
+      "row": 0.000558249878676509,
+      "runner_up_gap": 0.500340205812029,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.13._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002871629963808955,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006876085262203536,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005043365479762313,
+      "runner_up_gap": 0.7562727591380715,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005715435175279993,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006925075572563958,
+      "dtype": "torch.bfloat16",
+      "row": 0.000690792791415287,
+      "runner_up_gap": 0.2086442593261428,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004648385771826199,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006598926780274247,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006101165337911738,
+      "runner_up_gap": 0.3125342080880668,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00045771859083391735,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006796464546444153,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006058034983193413,
+      "runner_up_gap": 0.3235282779657871,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00038589348886601397,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006579415851591611,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005914479565803815,
+      "runner_up_gap": 0.5326715107798516,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006259151717138291,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006886428662339515,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006878603646302681,
+      "runner_up_gap": 0.09896739321212776,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0003581167218040104,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006545383862716761,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005703701677571939,
+      "runner_up_gap": 0.5926934796117822,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.14._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002528393538907353,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.000688405313299615,
+      "dtype": "torch.bfloat16",
+      "row": 0.000504150312624727,
+      "runner_up_gap": 0.9939550741084235,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005652312188127921,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006938461628706417,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006859472317032276,
+      "runner_up_gap": 0.21356925957484543,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004699712204881892,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006699692127973816,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006065490599160196,
+      "runner_up_gap": 0.29060894257728853,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00047552793307957395,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006854256287366859,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006100292815397983,
+      "runner_up_gap": 0.28284636738199176,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00042480239247372025,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006395426748256499,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006124239225633502,
+      "runner_up_gap": 0.4416677810995071,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0005257130533415457,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006890569923451166,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005947728215271409,
+      "runner_up_gap": 0.1313639974252806,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0003382753750193683,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006682849563943327,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005652904524102889,
+      "runner_up_gap": 0.6710954865630484,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.15._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002720788778093827,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006847350770536567,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005349376255998606,
+      "runner_up_gap": 0.966112290328673,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005542662732938065,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006916422165102382,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006886958067414641,
+      "runner_up_gap": 0.2425360154944859,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.00046032787195535114,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006605802031561844,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006030329168213637,
+      "runner_up_gap": 0.3100073959455013,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00047875017974096805,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006892088250529569,
+      "dtype": "torch.bfloat16",
+      "row": 0.000613308042173578,
+      "runner_up_gap": 0.2810607037378318,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0004354854475911091,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006533212407050256,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006120969613471784,
+      "runner_up_gap": 0.4055508966671498,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006186364084853119,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006869633358830457,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006879917078056119,
+      "runner_up_gap": 0.11044763363512275,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.000304093193051271,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006560459183418592,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005272599637839913,
+      "runner_up_gap": 0.7338762452834441,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.16._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002772004326855196,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006823293851966294,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005360244276981245,
+      "runner_up_gap": 0.933707038279545,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005640446452262511,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000692176784686221,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006882553651915682,
+      "runner_up_gap": 0.2202143412167194,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004771463118162351,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006755708393772529,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006135970287771021,
+      "runner_up_gap": 0.28597248596866176,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0004790568575113285,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000688659352816432,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006152800060122385,
+      "runner_up_gap": 0.28435695338666284,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00040373050123546507,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006401198681613212,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006145465914756396,
+      "runner_up_gap": 0.5221703329202311,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006115589113906446,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006884829560894619,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006875424740350822,
+      "runner_up_gap": 0.12424569608781598,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00032163043238843413,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006573014483188455,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005707462833419411,
+      "runner_up_gap": 0.774540671116124,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.17._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.000276808899316469,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006856617096822711,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005621894141029592,
+      "runner_up_gap": 1.0309658233213865,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005604360147406525,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006934303397273186,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006855161149554646,
+      "runner_up_gap": 0.22318355160079104,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.00048285914984348065,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006749126530197609,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006223497345425752,
+      "runner_up_gap": 0.28888462555656363,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0004871210700154365,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006834270456524348,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006253550220701315,
+      "runner_up_gap": 0.28377740271081775,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0004611066587811568,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006761659937990715,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006334297189859495,
+      "runner_up_gap": 0.37371626916057593,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006172718836110444,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.000690415677729226,
+      "dtype": "torch.bfloat16",
+      "row": 0.000688009964223689,
+      "runner_up_gap": 0.11459793081587706,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00038896868420349665,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006788294697857582,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005970695903137549,
+      "runner_up_gap": 0.5350068387546236,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.18._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00030237959992148865,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006905773346479356,
+      "dtype": "torch.bfloat16",
+      "row": 0.000556899057647933,
+      "runner_up_gap": 0.8417216564627014,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005524792443788762,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000692090086095508,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006904325812778965,
+      "runner_up_gap": 0.24969867791886752,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004793119853375064,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006744194419024303,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006330502578917444,
+      "runner_up_gap": 0.3207478161556581,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00048254526573076565,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006780628650010593,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006353539203485973,
+      "runner_up_gap": 0.3166721662607518,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00044734364056610797,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006430634986554263,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006324835480379291,
+      "runner_up_gap": 0.4138650707932918,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0005707526473693568,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006895503638270357,
+      "dtype": "torch.bfloat16",
+      "row": 0.000678615774910184,
+      "runner_up_gap": 0.18898401617228888,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0003630490658987378,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006628335425321169,
+      "dtype": "torch.bfloat16",
+      "row": 0.000584175537450362,
+      "runner_up_gap": 0.6090815052897042,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.19._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00028546883754142693,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006786173660795576,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005640789166665897,
+      "runner_up_gap": 0.9759737053076106,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.00020281488784613827,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006793670649773993,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006044237668177088,
+      "runner_up_gap": 1.9801745485087054,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.00040406004961509364,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0004907469658848303,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006384539735913428,
+      "runner_up_gap": 0.2145396862479087,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00043863398500505496,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006398940861305335,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006546601457443943,
+      "runner_up_gap": 0.4588338067857627,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0002034372186421935,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0005210119181253642,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005773070956678079,
+      "runner_up_gap": 1.5610452286104184,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006226568794102491,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.000664291900501271,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006792510167659222,
+      "runner_up_gap": 0.06686671659430886,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00026962031375838433,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006153909552402795,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006291338410587953,
+      "runner_up_gap": 1.2824354243269358,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.2._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00021246372265362368,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006862967450412048,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005800104993113199,
+      "runner_up_gap": 1.729927218007481,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005781354952381446,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006936368592098004,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006933844087475884,
+      "runner_up_gap": 0.19934585310658137,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005005955449394561,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006830905403370889,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006418097506899779,
+      "runner_up_gap": 0.2820924140817128,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0004931357571571507,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006865604957494352,
+      "dtype": "torch.bfloat16",
+      "row": 0.00063950188983664,
+      "runner_up_gap": 0.29680697567596165,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0004476688437993215,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006394385634881999,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006453960555035329,
+      "runner_up_gap": 0.4283740589614135,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0005548604096101309,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006895547805680908,
+      "dtype": "torch.bfloat16",
+      "row": 0.000657886181179058,
+      "runner_up_gap": 0.18567872168302205,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00038935893944205217,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006703371725376134,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006143869156849521,
+      "runner_up_gap": 0.577944804774132,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.20._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00032001418928979654,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.000685669224369113,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005786681016873198,
+      "runner_up_gap": 0.808257636861511,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005956412342635708,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006941718786519546,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006960042799837805,
+      "runner_up_gap": 0.16541944835334227,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005433201566717136,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006768296391422028,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006499102027250522,
+      "runner_up_gap": 0.19618275660209442,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0005276886512804907,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006902130992360476,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006440311039784226,
+      "runner_up_gap": 0.22047556341341631,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00036307098053524106,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006686882741124404,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006040776086790285,
+      "runner_up_gap": 0.663800306453835,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.000549743249446608,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006907795088918283,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006734661028891514,
+      "runner_up_gap": 0.2250557029433056,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00036768823199925875,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006784780272303119,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006122611443115853,
+      "runner_up_gap": 0.6651638291018778,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.21._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00019845830773976668,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.000688833380562524,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005522819944239891,
+      "runner_up_gap": 1.7828615527054799,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005930170089706533,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006952978361659017,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006964104835240396,
+      "runner_up_gap": 0.17247536857802007,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005316477490000308,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000683101985647723,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006400792010966236,
+      "runner_up_gap": 0.2039535619224196,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.000516805646734198,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006911627637661585,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006335938559284376,
+      "runner_up_gap": 0.225980907778869,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00037648453507251154,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006364048790178589,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006166867153718952,
+      "runner_up_gap": 0.6380134053929208,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006103620809081562,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006921717859534672,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006882764638149322,
+      "runner_up_gap": 0.1276527250691056,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.000353552742047658,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006667683335227761,
+      "dtype": "torch.bfloat16",
+      "row": 0.000612685702989104,
+      "runner_up_gap": 0.7329400401214128,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.22._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00018752456372970284,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006658015390100507,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005505973386679046,
+      "runner_up_gap": 1.9361344866880128,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005843531773560383,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000694624685762214,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006941267593575142,
+      "runner_up_gap": 0.18785485602757734,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.000507191482048572,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000659752759945965,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006293307709930635,
+      "runner_up_gap": 0.24081494517842608,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0005001531086449633,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006781209851341657,
+      "dtype": "torch.bfloat16",
+      "row": 0.000627632881920872,
+      "runner_up_gap": 0.2548814974304218,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.000457693248628395,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006472211836108057,
+      "dtype": "torch.bfloat16",
+      "row": 0.000642835813318878,
+      "runner_up_gap": 0.40451233494335803,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0005877962983656707,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006909195826927348,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006822336973801146,
+      "runner_up_gap": 0.1606634803196632,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0003836832769179506,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006712965714996137,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006151561963463725,
+      "runner_up_gap": 0.603291655783897,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.23._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00022850063847999354,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006576661889145145,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005719446893469662,
+      "runner_up_gap": 1.5030332219270497,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005287842029971092,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006933595914691071,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006567581149298718,
+      "runner_up_gap": 0.2420153839835157,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004738612712703342,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006656863142455998,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006251580083333602,
+      "runner_up_gap": 0.3192848756291634,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00046082689000156513,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006794888866058457,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006200714644112802,
+      "runner_up_gap": 0.3455626784478098,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00046068809753394214,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006413211183934382,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006454380214823287,
+      "runner_up_gap": 0.392093960808674,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0005772709441753748,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006885849415099832,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006718550662726378,
+      "runner_up_gap": 0.16384701681525898,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0003798132610893673,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.000670012197819063,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006096930514309611,
+      "runner_up_gap": 0.6052442447171551,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.24._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002752323311996845,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006674244311359397,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005895651958137088,
+      "runner_up_gap": 1.1420637366399073,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005589347540751445,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006953856774102357,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006911115543741686,
+      "runner_up_gap": 0.2364798383627688,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004684561304248509,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006782019267370759,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006328651956194089,
+      "runner_up_gap": 0.3509593631434659,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0004625000994094364,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006878549196612779,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006315095898031171,
+      "runner_up_gap": 0.3654258466311422,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00031619044749865954,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.000636867263153582,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005772843739367612,
+      "runner_up_gap": 0.8257489386652281,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0005868530925215887,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006909107480992832,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006797102613422845,
+      "runner_up_gap": 0.15822898439830554,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00032632514411709166,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006465685197932459,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005700392601582975,
+      "runner_up_gap": 0.7468444293515936,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.25._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002237355180964171,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006772846796051562,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005380800814933446,
+      "runner_up_gap": 1.4049828389851948,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005154275989813563,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006930143901730141,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006608929496226581,
+      "runner_up_gap": 0.2822226650819361,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.00044645291349953677,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006639454233853612,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006308981081358663,
+      "runner_up_gap": 0.41313470930349505,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0004367609828439731,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006858334724746313,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006286154121889536,
+      "runner_up_gap": 0.4392664108769941,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0004762333500200726,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006098847639074049,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006542149385489249,
+      "runner_up_gap": 0.28064270148593967,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0005886557192100049,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006909553837366688,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006594007069307925,
+      "runner_up_gap": 0.12018058333949373,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00035944108506274055,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.000565985395816695,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006055649147803586,
+      "runner_up_gap": 0.5746263277552206,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.26._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0003555139623208987,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006624320722825643,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006169807149150431,
+      "runner_up_gap": 0.735461276646389,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0004935140583923726,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006916789326515003,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006752701056388112,
+      "runner_up_gap": 0.36828950291408313,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004740833561936811,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006647063792148766,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006370379889864022,
+      "runner_up_gap": 0.343725698579783,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00046662652778516143,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006819937455625557,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006366655714556587,
+      "runner_up_gap": 0.36440072208836066,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0003634882072881035,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006515585898642279,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006219113839207701,
+      "runner_up_gap": 0.7109533994533102,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006319416267381075,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006921249574614674,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006908334827958793,
+      "runner_up_gap": 0.09319192401006061,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0003339272460449369,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0005971666478176709,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006020900031189652,
+      "runner_up_gap": 0.7883136368492365,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.27._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002365440083376899,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006902296086616767,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005901028535962781,
+      "runner_up_gap": 1.4946852712238141,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005214550416055567,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006923426305370405,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006871274707133211,
+      "runner_up_gap": 0.3177118176816551,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004882970629010687,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006606990460017166,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006421505903175962,
+      "runner_up_gap": 0.31508182028057563,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0004873800042944365,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006765221928584724,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006430739456178769,
+      "runner_up_gap": 0.3194508185637064,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0004825635507492553,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006446363274920753,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006632265661960764,
+      "runner_up_gap": 0.33585789165214963,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006191955684456533,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006906558180700146,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006831566020749252,
+      "runner_up_gap": 0.10329698222781404,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00042288929877772074,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006249673115227357,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006421266152300725,
+      "runner_up_gap": 0.4778508544176506,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.28._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00034168393392516866,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006787139376457172,
+      "dtype": "torch.bfloat16",
+      "row": 0.000619255228699733,
+      "runner_up_gap": 0.8123627341382533,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005429942222874987,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006927450048919911,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006859320270163118,
+      "runner_up_gap": 0.2632400104123611,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004393833385740395,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006550296205277494,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006324670089519255,
+      "runner_up_gap": 0.4394424035388176,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0004389977104243514,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000677419499093505,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006320414829449694,
+      "runner_up_gap": 0.4397375383439123,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00039668888397879486,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006591999400581287,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006339526267230798,
+      "runner_up_gap": 0.5981103890901263,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0005842498895163988,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006910201728981313,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006789742326491601,
+      "runner_up_gap": 0.16212984346675266,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.000369866740737389,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006118973579643674,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006251127384524609,
+      "runner_up_gap": 0.6543724822200863,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.29._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002936692810629452,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006817414926014952,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006083183643271593,
+      "runner_up_gap": 1.071440234148195,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005207977682695024,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006901826337339348,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006793747037006756,
+      "runner_up_gap": 0.3044885080020404,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.00032346542553587736,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0005667950002056285,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006241677742327103,
+      "runner_up_gap": 0.7522583727971326,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00038645252273808775,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006972678689953538,
+      "dtype": "torch.bfloat16",
+      "row": 0.000632620339769924,
+      "runner_up_gap": 0.6369936862818014,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0003068317918653241,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.000578121653563471,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006192626229965757,
+      "runner_up_gap": 0.8841647733075282,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006241128745043245,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006851284207991903,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006870458656116816,
+      "runner_up_gap": 0.0977636398597366,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00032693441254071326,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0005784908068446607,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006365063653830289,
+      "runner_up_gap": 0.7694399385767353,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.3._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00023996464886836893,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006791252371738065,
+      "dtype": "torch.bfloat16",
+      "row": 0.000611141034037492,
+      "runner_up_gap": 1.5467961090082458,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.00023880493150213393,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006882462890742213,
+      "dtype": "torch.bfloat16",
+      "row": 0.000386547198663332,
+      "runner_up_gap": 0.6186734345554243,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005095034993437863,
+      "bytes": 100663296,
+      "chosen": "column",
+      "column": 0.00023044283034062113,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006464483933881547,
+      "runner_up_gap": 1.2109757053004482,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0005143166541168501,
+      "bytes": 100663296,
+      "chosen": "column",
+      "column": 0.00043181573778661706,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006454942538392642,
+      "runner_up_gap": 0.19105583495662473,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0003511578208492516,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0004903853339485712,
+      "dtype": "torch.bfloat16",
+      "row": 0.000606407612976331,
+      "runner_up_gap": 0.3964813107753297,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.00041541919384662234,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.000687475237706733,
+      "dtype": "torch.bfloat16",
+      "row": 0.00048236049878863153,
+      "runner_up_gap": 0.16114157923748876,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0003156617315212837,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.000536089736849531,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005853163901082812,
+      "runner_up_gap": 0.698304492806043,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.30._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00026406522736555256,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006775596658441647,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005845405036385702,
+      "runner_up_gap": 1.2136216474627883,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.00042824966321466603,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006906080123360687,
+      "dtype": "torch.bfloat16",
+      "row": 0.000650381949002994,
+      "runner_up_gap": 0.5186980980227441,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.00044939130372768736,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000624918617213892,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006362381870405396,
+      "runner_up_gap": 0.39058903016193425,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00045045013039847335,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006742087784849054,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006320100338587,
+      "runner_up_gap": 0.4030632720643609,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00031173772901516364,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.000616711077806572,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005709194864534949,
+      "runner_up_gap": 0.831409654061232,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006165779322257177,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006893081871292722,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006762077830850093,
+      "runner_up_gap": 0.09671097154586816,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0003019897551260599,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0005114555269403408,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005108679020673903,
+      "runner_up_gap": 0.6916729570979592,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.31._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002640264559514015,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006612324626469658,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005514947665883828,
+      "runner_up_gap": 1.0887860066943238,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0002951208117754177,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006908484882593298,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006805286652839145,
+      "runner_up_gap": 1.3059324796171474,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0004637563558931051,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006474614102012986,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006470725449144307,
+      "runner_up_gap": 0.39528555607242094,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00044919113057339974,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006782290172399978,
+      "dtype": "torch.bfloat16",
+      "row": 0.00063419281395403,
+      "runner_up_gap": 0.4118551564998015,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00038654162134618816,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0005544276724629868,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005865637201595952,
+      "runner_up_gap": 0.434328522067328,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.000577440374282289,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006896667932313622,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006629227596221748,
+      "runner_up_gap": 0.14803673097180528,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0003600824968906905,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0005896021320316976,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005101185772689674,
+      "runner_up_gap": 0.4166714063411503,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.32._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00030153102094432316,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006620854224754995,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005280562582070287,
+      "runner_up_gap": 0.7512501916163803,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0003060592190787165,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006910894536277883,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006602645821327103,
+      "runner_up_gap": 1.1573098961704351,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005177353394219497,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006255876389346904,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006656675101154526,
+      "runner_up_gap": 0.2083155065929196,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.00051548702255194,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006647775872199418,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006628165003771598,
+      "runner_up_gap": 0.28580637606715886,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0003819636869515866,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0005865447301571455,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006032304185403408,
+      "runner_up_gap": 0.535603383762209,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006540616251176397,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006884460902115614,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006975304073111367,
+      "runner_up_gap": 0.052570681069597,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00033440260115489076,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0005369761817627549,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005602085017907479,
+      "runner_up_gap": 0.6057775265750245,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.33._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002606335936397194,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006835015095784597,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005415509464978349,
+      "runner_up_gap": 1.0778248073670613,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0002826902560923151,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006901361357676318,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006778271186796405,
+      "runner_up_gap": 1.3977731954733164,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005319746196269214,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000656328862655608,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006701560721515585,
+      "runner_up_gap": 0.23375972920643723,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0005294694942095918,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006769317797124696,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006611988222976062,
+      "runner_up_gap": 0.2487949344176361,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00043619820686473715,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0005652956942905461,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006396892378722839,
+      "runner_up_gap": 0.29596061009448726,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006126165095385586,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006882047265035894,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006486717511188294,
+      "runner_up_gap": 0.05885450525554524,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0004204970435145973,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0005884436753420066,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006045934484580468,
+      "runner_up_gap": 0.39940026789172695,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.34._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0003388146332306151,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.000665088407921569,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005453861396770453,
+      "runner_up_gap": 0.6096888569326545,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.00035234936232416325,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006843014595633799,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006816020706303436,
+      "runner_up_gap": 0.9344495648704088,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005841388205163886,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006612622193986635,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006860638741171874,
+      "runner_up_gap": 0.13202923033620093,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0005830890852072739,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006791842043699504,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006856578481842844,
+      "runner_up_gap": 0.164803495041443,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00047776628769991117,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006047213441674233,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006680968241688606,
+      "runner_up_gap": 0.26572627608093946,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006580134131840737,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006934582395666231,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006834398194097282,
+      "runner_up_gap": 0.038641167058613875,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0005013723347399241,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0005934079072406734,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006800672376779534,
+      "runner_up_gap": 0.183567313398915,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.35._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0004803440896151982,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006669438849527449,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006674470334363854,
+      "runner_up_gap": 0.38847109680693914,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0001622409335121592,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006857517771066856,
+      "dtype": "torch.bfloat16",
+      "row": 0.0004918137224252746,
+      "runner_up_gap": 2.0313787758649418,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.00047568099788991244,
+      "bytes": 100663296,
+      "chosen": "column",
+      "column": 0.00025235236247910577,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006419396997098104,
+      "runner_up_gap": 0.8849872979861554,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0005508898622381158,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006039006735809202,
+      "dtype": "torch.bfloat16",
+      "row": 0.000669561482433774,
+      "runner_up_gap": 0.09622760369456768,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0004192007931379965,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006075408444215803,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006222558561983285,
+      "runner_up_gap": 0.4492836234247874,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.000623562482843012,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006825795880075823,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006838717468004716,
+      "runner_up_gap": 0.09464505448675045,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0004365931139763601,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006503916847375995,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006263074281339071,
+      "runner_up_gap": 0.4345334547988757,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.4._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00029098051191218575,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006832173421185226,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005278957210911592,
+      "runner_up_gap": 0.8141961385045315,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0004908482266422901,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006874439979776359,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006810778696510237,
+      "runner_up_gap": 0.38755287822882384,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005761411546606597,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006736805742658023,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006641525945508225,
+      "runner_up_gap": 0.15276020325609363,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0005866964862118863,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006666220091963391,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006703719277671803,
+      "runner_up_gap": 0.13622976251401564,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0003651822233577747,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006020311091944773,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006030094226206207,
+      "runner_up_gap": 0.6485772600290516,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006449828633725999,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006864578551848369,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006918658370239962,
+      "runner_up_gap": 0.06430402134308703,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0003821137880431075,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006374495337476473,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005990920712372934,
+      "runner_up_gap": 0.567836832859085,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.5._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00025494998456928187,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006890072290988547,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005204226304488468,
+      "runner_up_gap": 1.0412734337994185,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005641406568429949,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006880589781912699,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006913499059017243,
+      "runner_up_gap": 0.21965855473303095,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.000589416035485158,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006792569516502696,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006734116038366757,
+      "runner_up_gap": 0.142506418717264,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0005929854428001214,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006796272760937094,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006746199176988149,
+      "runner_up_gap": 0.13766691221492633,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0003016514758819449,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006453246486123221,
+      "dtype": "torch.bfloat16",
+      "row": 0.000560389094506612,
+      "runner_up_gap": 0.8577369557639004,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006514884717593322,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006871821913128144,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006953396032999853,
+      "runner_up_gap": 0.05478795266644084,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.000262598377252366,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006287517471291267,
+      "dtype": "torch.bfloat16",
+      "row": 0.000526285215665162,
+      "runner_up_gap": 1.0041449652957448,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.6._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.00017860001830201854,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006860556238002659,
+      "dtype": "torch.bfloat16",
+      "row": 0.00046525873345543156,
+      "runner_up_gap": 1.6050318352636652,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.000556247886932622,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006882032466312705,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006891182070093715,
+      "runner_up_gap": 0.23722401971952506,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005994163470779401,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006816059566940595,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006754290059701626,
+      "runner_up_gap": 0.12681112095586336,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.000601934278314954,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006817470497931714,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006764364607532949,
+      "runner_up_gap": 0.12377129052510712,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.00045308554753695543,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006706376337395509,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006078895160187915,
+      "runner_up_gap": 0.34166609224985195,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006172766743642592,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006872172202593391,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006840527470305303,
+      "runner_up_gap": 0.10817851287681418,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00039778368382903053,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006728208768062721,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005708358111828044,
+      "runner_up_gap": 0.4350407882193393,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.7._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0003078726023995206,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006872515590880475,
+      "dtype": "torch.bfloat16",
+      "row": 0.000514544785648428,
+      "runner_up_gap": 0.6712912472176158,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0004413031151570241,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.000686817740234921,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006814468267455073,
+      "runner_up_gap": 0.5441695364036473,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005831852154515037,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006832613034861353,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006746170782123063,
+      "runner_up_gap": 0.1567801452065546,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.0006067429767370563,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006736136003124589,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006822587699039543,
+      "runner_up_gap": 0.11021243943361253,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0003530159971951569,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006260720775779766,
+      "dtype": "torch.bfloat16",
+      "row": 0.00047243920027605665,
+      "runner_up_gap": 0.33829402641739026,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006100003430067135,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.000687701982671561,
+      "dtype": "torch.bfloat16",
+      "row": 0.000687688465377136,
+      "runner_up_gap": 0.1273575060425294,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.0002774209883583533,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006288056316515856,
+      "dtype": "torch.bfloat16",
+      "row": 0.0003919414354580293,
+      "runner_up_gap": 0.4128038321013636,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.8._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002305329952713333,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006929803036548797,
+      "dtype": "torch.bfloat16",
+      "row": 0.00035804764327741333,
+      "runner_up_gap": 0.5531297064699894,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.mlp_moe_gen.down_proj.weight": {
+      "block": 0.0005577957327624213,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006881913390388035,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006887749698949023,
+      "runner_up_gap": 0.23376945827572487,
+      "shape": [
+        4096,
+        12288
+      ]
+    },
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.mlp_moe_gen.gate_proj.weight": {
+      "block": 0.0005748127323205337,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006865021596934473,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006686901468048671,
+      "runner_up_gap": 0.1633182586359002,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.mlp_moe_gen.up_proj.weight": {
+      "block": 0.000581468295076603,
+      "bytes": 100663296,
+      "chosen": "block",
+      "column": 0.0006799481002605591,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006710398378003452,
+      "runner_up_gap": 0.1540437259987527,
+      "shape": [
+        12288,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.self_attn.k_proj_moe_gen.weight": {
+      "block": 0.0004272348381194988,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006613087603381306,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005604166568241872,
+      "runner_up_gap": 0.31172977206375907,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.self_attn.o_proj_moe_gen.weight": {
+      "block": 0.0006274744551228968,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.000687295532746656,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006879635350157681,
+      "runner_up_gap": 0.09533627566088364,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.self_attn.q_proj_moe_gen.weight": {
+      "block": 0.00036323974601703006,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006396657251171156,
+      "dtype": "torch.bfloat16",
+      "row": 0.0005051481359674933,
+      "runner_up_gap": 0.390674180087688,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.language_model.model.layers.9._checkpoint_wrapped_module.self_attn.v_proj_moe_gen.weight": {
+      "block": 0.0002617629422424468,
+      "bytes": 8388608,
+      "chosen": "block",
+      "column": 0.0006839756037499865,
+      "dtype": "torch.bfloat16",
+      "row": 0.00043077765621177684,
+      "runner_up_gap": 0.6456785384570874,
+      "shape": [
+        1024,
+        4096
+      ]
+    },
+    "net.llm2action.fc.weight": {
+      "block": 0.00039756380479004285,
+      "bytes": 16777216,
+      "chosen": "column",
+      "column": 3.513380730563836e-15,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006974218447141253,
+      "runner_up_gap": 397563804.7865295,
+      "shape": [
+        32,
+        262144
+      ]
+    },
+    "net.llm2vae.weight": {
+      "block": 0.00041285915392162155,
+      "bytes": 1572864,
+      "chosen": "block",
+      "column": 0.0006706730157004564,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006694885079550785,
+      "runner_up_gap": 0.6215905632606519,
+      "shape": [
+        192,
+        4096
+      ]
+    },
+    "net.time_embedder.mlp.0.weight": {
+      "block": 0.00012285945478385726,
+      "bytes": 2097152,
+      "chosen": "block",
+      "column": 0.0006408626698151699,
+      "dtype": "torch.bfloat16",
+      "row": 0.00012782636747644214,
+      "runner_up_gap": 0.04042759835881592,
+      "shape": [
+        4096,
+        256
+      ]
+    },
+    "net.time_embedder.mlp.2.weight": {
+      "block": 0.00020807218126127778,
+      "bytes": 33554432,
+      "chosen": "block",
+      "column": 0.0006401350736932397,
+      "dtype": "torch.bfloat16",
+      "row": 0.0003770676320223054,
+      "runner_up_gap": 0.8121962760068285,
+      "shape": [
+        4096,
+        4096
+      ]
+    },
+    "net.vae2llm.weight": {
+      "block": 0.0006565012363611036,
+      "bytes": 1572864,
+      "chosen": "block",
+      "column": 0.0006750641527908655,
+      "dtype": "torch.bfloat16",
+      "row": 0.0006752126947346319,
+      "runner_up_gap": 0.02827552394669293,
+      "shape": [
+        4096,
+        192
+      ]
+    }
+  },
+  "version": 1
+}

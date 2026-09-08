@@ -1,0 +1,32 @@
+{
+  "experiment": "pi05_fp8_granularity_a800_600_1000_v1",
+  "model": "pi05",
+  "purpose": "precision-only FP8 gradient granularity comparison",
+  "checkpoint_step": 300,
+  "formal_step_range": [301, 1000],
+  "variants": [
+    "dense",
+    "gradient_row",
+    "gradient_column",
+    "gradient_block",
+    "per_tensor"
+  ],
+  "checkpoint": "/raid0/fastwam/experiments/pi05_fp8_granularity_long_a800_v1/gradient_row/checkpoints/steps_300",
+  "dataset": "/raid0/fastwam/vla_artifacts/pi05/datasets/libero",
+  "tokenizer": "/raid0/fastwam/vla_artifacts/pi05/tokenizers/paligemma-3b-pt-224",
+  "pretrained_checkpoint": "/raid0/fastwam/vla_artifacts/pi05/models/pi05_base",
+  "world_size": 8,
+  "seed": 42,
+  "rank": 1,
+  "min_compression_rate": 4.0,
+  "block_size": 128,
+  "min_bytes_exclusive": 65536,
+  "eligible_rule": "ndim == 2 and numel * element_size > 65536",
+  "exact_warmup_steps": 2,
+  "scheduled_first_compression_step": 303,
+  "calibration_steps": 20,
+  "tie_margin": 0.05,
+  "collective_semantics": "local quantize/dequantize followed by exact all-reduce",
+  "scope_limit": "gradient communication only; parameter all-gather not measured",
+  "source_data_pulled_to": "/Users/lijianhao/Desktop/pro6k/experiments/powersgd_experiment_archive_20260828/cosmos3_fp8_granularity_a800_20260908/remote_full"
+}

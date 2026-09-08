@@ -1,0 +1,13 @@
+{
+  "calibration_steps": 20,
+  "selected_bytes": {
+    "block": 13628342272,
+    "column": 335806464
+  },
+  "tensor_counts": {
+    "block": 253,
+    "column": 6
+  },
+  "total_bytes": 13964148736,
+  "total_tensors": 259
+}

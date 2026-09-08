@@ -1,0 +1,31 @@
+{
+  "experiment": "cosmos3_fp8_granularity_a800_600_1000_v1",
+  "purpose": "precision-only FP8 gradient granularity comparison on Cosmos3",
+  "checkpoint_step": 600,
+  "formal_target_step": 1000,
+  "quantization_start_step": 603,
+  "calibration_score_steps": [603, 620],
+  "calibration_finalize_step": 621,
+  "variants": [
+    "dense",
+    "gradient_row",
+    "gradient_column",
+    "gradient_block",
+    "per_tensor"
+  ],
+  "eligible_ndim": 2,
+  "min_bytes_strictly_greater_than": 65536,
+  "block_size": 128,
+  "per_tensor_candidates": ["row", "column", "block"],
+  "tie_margin": 0.05,
+  "seed": 42,
+  "dtype": "bfloat16",
+  "per_device_batch_size": 1,
+  "collective": "exact_all_reduce_after_local_quantize_dequantize",
+  "limitations": [
+    "gradient-only DDP hook",
+    "precision reference rather than production FP8 communication",
+    "fixed per-tensor route after calibration",
+    "ineligible gradients use exact all-reduce"
+  ]
+}
