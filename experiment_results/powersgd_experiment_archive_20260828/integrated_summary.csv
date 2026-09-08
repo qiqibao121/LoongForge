@@ -1,0 +1,12 @@
+model,variant,window,action_loss_mae,action_loss_mape_pct,max_abs_error,mean_step_time_s,mean_throughput,freeze_v_active,source,notes
+pi05,dense,301-1000,0,0,0,0.975460254,12.30217514,no,pi05_powersgd_plus_acp_resume_a800_100_1000_v2,共同baseline参考
+pi05,powersgd_plus_rank1,301-1000,0.007678263677,4.895804426,0.02235248685,3.429331812,3.852907714,no,pi05_powersgd_plus_acp_resume_a800_100_1000_v2,已有纯PowerSGD+结果
+pi05,powersgd_plus_freeze_v_rank1,301-1000,0.004815048128,3.082336632,0.02863560617,2.840724459,4.622484504,yes,pi05_powersgd_plus_freeze_v_fair_a800_100_1000_v2,freeze-v改善均值误差约37%但仍慢于dense
+fastwam,powersgd_plus_freeze_v_rank1,301-1000,0.000668255,0.048533131,0.009845734,1.073085572,0.942781957,yes,fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1,step422最大绝对误差；冻结v已实际运行
+fastwam,dense,301-1000,0,0,0,0.835822413,1.206117088,no,fastwam_powersgd_plus_rank1_fair_a800_100_1000_v2/dense,代表性共同dense基线；冻结v v1自带dense为0.832065748 s
+fastwam,powersgd_plus_rank1,301-1000,0.000664850,0.048361479,0.006832361,1.075070335,0.941436994,no,fastwam_powersgd_plus_rank1_fair_a800_100_1000_v2/powersgd_plus_rank1,纯PowerSGD+ rank1；step317最大绝对误差
+cosmos3,dense,301-1000,0,0,0,2.014998800,0.501982575,no,cosmos3_powersgd_plus_freeze_v_fair_a800_100_1000_v4/dense,修复后共同dense基线
+cosmos3,powersgd_plus_freeze_v_rank1,301-1000,1.163594295,9418.369575,6.116674384,2.272029821,0.453831389,yes,cosmos3_powersgd_plus_freeze_v_fair_a800_100_1000_v4/powersgd_plus_freeze_v_rank1,step963最大绝对误差；冻结v实际激活但误差显著放大
+cosmos3,powersgd_plus_rank1,301-1000,0.015706470,120.215790,0.182259791,2.261300823,0.455789506,no,cosmos3_powersgd_plus_fair_a800_100_1000_v1/powersgd_plus_rank1,补跑完成；step482最大绝对误差；rank1实际压缩并按50步重启
+pi05,gradient_row_fp8_reference,301-1000,0.000243191,0.155347,0.002245218,1.347160742,8.920366867,no,pi05_fp8_granularity_long_a800_v1/gradient_row,FP8行粒度梯度参考实现；step582最大绝对误差；461 tensors，覆盖99.975%梯度字节
+pi05,gradient_block128_fp8_reference,301-1000,0.000274373,0.174412,0.001689523,4.044088025,3.045500090,no,pi05_fp8_granularity_long_a800_v1/gradient_block_retry,FP8块粒度梯度参考实现；step838最大绝对误差；首次OOM后allocator优化重试成功

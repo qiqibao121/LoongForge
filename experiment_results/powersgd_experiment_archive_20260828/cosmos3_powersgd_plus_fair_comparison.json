@@ -1,0 +1,24 @@
+{
+  "source": "/raid0/fastwam/experiments/cosmos3_powersgd_plus_fair_a800_100_1000_v1",
+  "window": "301-1000",
+  "aligned_steps": 700,
+  "dense": {
+    "action_loss_mean": 0.019824469616037926,
+    "mean_step_time_s": 2.0023120476814387,
+    "mean_throughput": 0.5047800806972176
+  },
+  "powersgd_plus_rank1": {
+    "action_loss_mean": 0.03447143676690757,
+    "action_loss_mae": 0.01570647000900603,
+    "action_loss_mape_pct": 120.21579007210508,
+    "max_abs_error": 0.18225979059934616,
+    "max_error_step": 482,
+    "mean_step_time_s": 2.2613008231822667,
+    "mean_throughput": 0.45578950635241056,
+    "rank": 1,
+    "scheduled_start_step": 300,
+    "restart_period": 50,
+    "restart_count": 15
+  },
+  "errors": {"nan": 0, "oom": 0, "cuda": 0, "nccl": 0}
+}

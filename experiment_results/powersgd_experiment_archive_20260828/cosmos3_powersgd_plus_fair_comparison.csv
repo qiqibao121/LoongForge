@@ -1,0 +1,3 @@
+variant,window,action_loss_mean,action_loss_mae,action_loss_mape_pct,max_abs_error,max_error_step,mean_step_time_s,mean_throughput,rank1_active,restarts,errors
+dense,301-1000,0.0198244696160,0,0,0,,2.002312048,0.5047800807,no,0,0
+powersgd_plus_rank1,301-1000,0.0344714367669,0.0157064700090,120.2157900721,0.1822597905993,482,2.261300823,0.4557895064,yes,15,0

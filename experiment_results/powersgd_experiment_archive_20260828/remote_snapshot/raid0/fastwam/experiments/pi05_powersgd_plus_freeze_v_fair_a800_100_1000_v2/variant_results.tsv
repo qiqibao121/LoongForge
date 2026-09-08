@@ -1,0 +1,2 @@
+variant	result	attempt	detail
+powersgd_plus_freeze_v_rank1_start300	success	1	completed_step=1000,freeze_v_start=301

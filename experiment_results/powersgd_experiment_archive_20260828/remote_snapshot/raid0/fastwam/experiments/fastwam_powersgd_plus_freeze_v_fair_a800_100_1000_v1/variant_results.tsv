@@ -1,0 +1,5 @@
+variant	result	attempt	detail
+warmup_dense	success	1	completed_step=100
+warmup_freeze_v	success	1	completed_step=100
+dense	success	1	completed_step=1000
+powersgd_plus_freeze_v_rank1	success	1	completed_step=1000

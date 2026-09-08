@@ -1,0 +1,536 @@
++ test -f /etc/shinit_v2
++ source /etc/shinit_v2
++++ sed -n 's/^NVRM.*Kernel Module\( for [a-z0-9_]*\| \) *\([^() ]*\).*$/\2/p' /proc/driver/nvidia/version
++++ sed 's/^$/unknown/'
+++ NV_DRIVER_VERS=535.230.02
+++ export _CUDA_COMPAT_PATH=/usr/local/cuda/compat
+++ _CUDA_COMPAT_PATH=/usr/local/cuda/compat
++++ hostname
+++ _CUDA_COMPAT_CHECKFILE=/usr/local/cuda/compat/.535.230.02.bddx-inf-sci-k8s-a800-03849.bddx.baidu.com.checked
+++ _CUDA_COMPAT_REALLIB=/usr/local/cuda/compat/lib.real
+++ _CUDA_COMPAT_SYMLINK=/usr/local/cuda/compat/lib
++++ nvidia-smi -q -d COMPUTE
++++ grep '^CUDA Version'
++++ sed 's/^.*: //'
+++ _RUNNING_CUDA_VERSION=12.9
++++ echo 12.9.1.010
++++ cut -d . -f 1-2
+++ _CONTAINER_CUDA_VERSION=12.9
+++ '[' -e /dev/nvgpu -a '(' 12.9 = 12.9 ')' ']'
+++ '[' '(' '(' -n 535.230.02 -a -e /dev/nvidiactl ')' -o -e /dev/nvgpu ')' -a '!' -e /usr/local/cuda/compat/.535.230.02.bddx-inf-sci-k8s-a800-03849.bddx.baidu.com.checked ']'
++++ cat /sys/module/mlx5_core/version
+++ _DETECTED_MOFED=5.8-4.1.5
+++ '[' -n 5.8-4.1.5 ']'
++++ uname -r
+++ '[' 5.8-4.1.5 '!=' 5.15.0-124-generic ']'
+++ dpkg --compare-versions 5.8-4.1.5 lt 4.9
+++ '[' -d /sys/bus/pci/drivers/efa ']'
+++ unset _DETECTED_MOFED
+++ unset _CUDA_COMPAT_CHECKFILE
+++ unset _CUDA_COMPAT_REALLIB
+++ unset _CUDA_COMPAT_SYMLINK
+++ unset _RUNNING_CUDA_VERSION
+++ unset _CONTAINER_CUDA_VERSION
++ '[' -z '' ']'
++ return
++ set -uo pipefail
++ ROOT=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1
++ LOONGFORGE_PATH=/workspace/LoongForge
++ ARTIFACTS_ROOT=/raid0/fastwam/vla_artifacts
++ TRAIN_SCRIPT=/workspace/LoongForge/examples/embodied/fastwam/run_fastwam_sft_ddp_zero1_finetune.sh
++ RESULTS=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/variant_results.tsv
++ STATUS=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
++ mkdir -p /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/config /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_dense /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_freeze_v /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1
++ [[ ! -x /workspace/LoongForge/examples/embodied/fastwam/run_fastwam_sft_ddp_zero1_finetune.sh ]]
++ for f in "$ARTIFACTS_ROOT/fastwam/models/ActionDiT_linear_interp_Wan22_alphascale_1024hdim.pt" "$ARTIFACTS_ROOT/fastwam/models/Wan-AI/Wan2.2-TI2V-5B/config.json" "$ARTIFACTS_ROOT/fastwam/datasets/LIBERO-fastwam/libero_10_no_noops_lerobot/meta/info.json"
++ [[ -e /raid0/fastwam/vla_artifacts/fastwam/models/ActionDiT_linear_interp_Wan22_alphascale_1024hdim.pt ]]
++ for f in "$ARTIFACTS_ROOT/fastwam/models/ActionDiT_linear_interp_Wan22_alphascale_1024hdim.pt" "$ARTIFACTS_ROOT/fastwam/models/Wan-AI/Wan2.2-TI2V-5B/config.json" "$ARTIFACTS_ROOT/fastwam/datasets/LIBERO-fastwam/libero_10_no_noops_lerobot/meta/info.json"
++ [[ -e /raid0/fastwam/vla_artifacts/fastwam/models/Wan-AI/Wan2.2-TI2V-5B/config.json ]]
++ for f in "$ARTIFACTS_ROOT/fastwam/models/ActionDiT_linear_interp_Wan22_alphascale_1024hdim.pt" "$ARTIFACTS_ROOT/fastwam/models/Wan-AI/Wan2.2-TI2V-5B/config.json" "$ARTIFACTS_ROOT/fastwam/datasets/LIBERO-fastwam/libero_10_no_noops_lerobot/meta/info.json"
++ [[ -e /raid0/fastwam/vla_artifacts/fastwam/datasets/LIBERO-fastwam/libero_10_no_noops_lerobot/meta/info.json ]]
++ printf 'model=fastwam\ntarget_step=1000\nwarmup_steps=100\nstart_global_step=300\nfirst_affected_step=301\n'
++ printf 'seed=42\ndtype=bfloat16\nper_device_batch_size=1\noptimizer=AdamW\nddp_zero_optimizer=1\n'
++ printf 'rank=1\nmin_compression_rate=4.0\nrestart_period=50\nrestart_method=approximate\nfreeze_v_start_step=301\n'
++ [[ -f /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/variant_results.tsv ]]
++ run_warmup dense warmup_dense 31101
++ local mode=dense label=warmup_dense port=31101
++ local out=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_dense log=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_dense/train.log
+++ last_step /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_dense/metrics.jsonl
+++ [[ -f /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_dense/metrics.jsonl ]]
+++ sed -nE 's/.*"step": ([0-9]+).*/\1/p' /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_dense/metrics.jsonl
+++ tail -1
++ [[ 100 == 100 ]]
++ return 0
++ run_warmup freeze_v warmup_freeze_v 31102
++ local mode=freeze_v label=warmup_freeze_v port=31102
++ local out=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_freeze_v log=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_freeze_v/train.log
+++ last_step /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_freeze_v/metrics.jsonl
+++ [[ -f /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_freeze_v/metrics.jsonl ]]
+++ sed -nE 's/.*"step": ([0-9]+).*/\1/p' /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_freeze_v/metrics.jsonl
+++ tail -1
++ [[ 100 == 100 ]]
++ return 0
++ run_main dense dense /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_dense 31201
++ local mode=dense name=dense warm=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_dense port=31201
++ local out=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense log=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense/train.log
+++ last_step /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense/metrics.jsonl
+++ [[ -f /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense/metrics.jsonl ]]
+++ echo 0
+++ return
++ [[ 0 == 1000 ]]
++ mkdir -p /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense/checkpoints
++ ln -sfn /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_dense/checkpoints/steps_100 /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense/checkpoints/steps_100
++ write_status running dense steps=101-1000
++ local phase=running variant=dense detail=steps=101-1000 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
+++ date '+%F %T %Z'
++ printf 'timestamp=%q\n' '2026-08-28 17:42:40 CST'
++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' running dense steps=101-1000
++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
++ local rc
+++ run_fastwam dense /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense/train.log 1000 1 31201
+++ local mode=dense out=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense log=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense/train.log iters=1000 resume=1 port=31201
+++ hook_args=()
+++ resume_args=()
+++ local hook_args resume_args
+++ [[ dense == freeze_v ]]
+++ [[ 1 == 1 ]]
+++ resume_args+=(--resume)
+++ wait_idle
+++ local stable=0
+++ ((  stable < 3  ))
+++ local busy=0 mem util
+++ IFS=,
+++ read -r mem util
++++ nvidia-smi --query-gpu=memory.used,utilization.gpu --format=csv,noheader,nounits
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ ((  busy == 0  ))
+++ stable=1
+++ write_status waiting_for_idle_gpus setup stable=1/3
+++ local phase=waiting_for_idle_gpus variant=setup detail=stable=1/3 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
++++ date '+%F %T %Z'
+++ printf 'timestamp=%q\n' '2026-08-28 17:42:40 CST'
+++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' waiting_for_idle_gpus setup stable=1/3
+++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
+++ ((  stable == 3  ))
+++ sleep 10
+++ ((  stable < 3  ))
+++ local busy=0 mem util
+++ IFS=,
+++ read -r mem util
++++ nvidia-smi --query-gpu=memory.used,utilization.gpu --format=csv,noheader,nounits
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ ((  busy == 0  ))
+++ stable=2
+++ write_status waiting_for_idle_gpus setup stable=2/3
+++ local phase=waiting_for_idle_gpus variant=setup detail=stable=2/3 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
++++ date '+%F %T %Z'
+++ printf 'timestamp=%q\n' '2026-08-28 17:42:50 CST'
+++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' waiting_for_idle_gpus setup stable=2/3
+++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
+++ ((  stable == 3  ))
+++ sleep 10
+++ ((  stable < 3  ))
+++ local busy=0 mem util
+++ IFS=,
+++ read -r mem util
++++ nvidia-smi --query-gpu=memory.used,utilization.gpu --format=csv,noheader,nounits
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ ((  busy == 0  ))
+++ stable=3
+++ write_status waiting_for_idle_gpus setup stable=3/3
+++ local phase=waiting_for_idle_gpus variant=setup detail=stable=3/3 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
++++ date '+%F %T %Z'
+++ printf 'timestamp=%q\n' '2026-08-28 17:43:00 CST'
+++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' waiting_for_idle_gpus setup stable=3/3
+++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
+++ ((  stable == 3  ))
+++ ((  stable < 3  ))
+++ write_status running dense train_iters=1000,resume=1
+++ local phase=running variant=dense detail=train_iters=1000,resume=1 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
++++ date '+%F %T %Z'
+++ printf 'timestamp=%q\n' '2026-08-28 17:43:00 CST'
+++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' running dense train_iters=1000,resume=1
+++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
+++ set +e
++++ [[ 1000 == 100 ]]
++++ echo 0
+++ env LOONGFORGE_PATH=/workspace/LoongForge PYTHONPATH=/workspace/Loong-Megatron: LOCAL_VLA_ARTIFACTS_ROOT=/raid0/fastwam/vla_artifacts TRAIN_ITERS=1000 GPUS_PER_NODE=8 PER_DEVICE_BATCH_SIZE=1 GRADIENT_ACCUMULATION_STEPS=1 NUM_WORKERS=0 SEED=42 SAVE_INTERVAL=0 MASTER_PORT=31201 OUTPUT_DIR=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense ACTION_DIT_PRETRAINED_PATH=/raid0/fastwam/vla_artifacts/fastwam/models/ActionDiT_linear_interp_Wan22_alphascale_1024hdim.pt TEXT_EMBEDDING_CACHE_DIR=/raid0/fastwam/vla_artifacts/fastwam/datasts/text_embeds DIFFSYNTH_MODEL_BASE_PATH=/raid0/fastwam/vla_artifacts/fastwam/models DIFFSYNTH_SKIP_DOWNLOAD=true DATASET_PATH=/raid0/fastwam/vla_artifacts/fastwam/datasets/LIBERO-fastwam/libero_10_no_noops_lerobot bash /workspace/LoongForge/examples/embodied/fastwam/run_fastwam_sft_ddp_zero1_finetune.sh --zero-optimizer --zero-parameters-as-bucket-view --save-format dcp --lr-decay-iters 1000 --resume
+++ local rc=0
+++ set -e
+++ echo 0
++ rc=0
++ local step
+++ last_step /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense/metrics.jsonl
+++ [[ -f /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense/metrics.jsonl ]]
+++ sed -nE 's/.*"step": ([0-9]+).*/\1/p' /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/dense/metrics.jsonl
+++ tail -1
++ step=1000
++ [[ 0 == 0 ]]
++ [[ 1000 == 1000 ]]
++ printf '%s\tsuccess\t1\tcompleted_step=1000\n' dense
++ return 0
++ run_main freeze_v powersgd_plus_freeze_v_rank1 /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_freeze_v 31202
++ local mode=freeze_v name=powersgd_plus_freeze_v_rank1 warm=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_freeze_v port=31202
++ local out=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1 log=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1/train.log
+++ last_step /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1/metrics.jsonl
+++ [[ -f /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1/metrics.jsonl ]]
+++ echo 0
+++ return
++ [[ 0 == 1000 ]]
++ mkdir -p /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1/checkpoints
++ ln -sfn /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/warmup_freeze_v/checkpoints/steps_100 /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1/checkpoints/steps_100
++ write_status running powersgd_plus_freeze_v_rank1 steps=101-1000
++ local phase=running variant=powersgd_plus_freeze_v_rank1 detail=steps=101-1000 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
+++ date '+%F %T %Z'
++ printf 'timestamp=%q\n' '2026-08-28 17:57:44 CST'
++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' running powersgd_plus_freeze_v_rank1 steps=101-1000
++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
++ local rc
+++ run_fastwam freeze_v /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1 /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1/train.log 1000 1 31202
+++ local mode=freeze_v out=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1 log=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1/train.log iters=1000 resume=1 port=31202
+++ hook_args=()
+++ resume_args=()
+++ local hook_args resume_args
+++ [[ freeze_v == freeze_v ]]
+++ hook_args=(--ddp-comm-hook powersgd_plus_hook --ddp-powersgd-matrix-approximation-rank 1 --ddp-powersgd-start-iter 199 --ddp-powersgd-min-compression-rate 4.0 --ddp-powersgd-plus-restart-period 50 --ddp-powersgd-plus-restart-method approximate --ddp-powersgd-freeze-v --ddp-powersgd-freeze-v-start-step 301 --ddp-powersgd-global-step-offset 100 --ddp-powersgd-scheduled-start-step 300)
+++ [[ 1 == 1 ]]
+++ resume_args+=(--resume)
+++ wait_idle
+++ local stable=0
+++ ((  stable < 3  ))
+++ local busy=0 mem util
+++ IFS=,
+++ read -r mem util
++++ nvidia-smi --query-gpu=memory.used,utilization.gpu --format=csv,noheader,nounits
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=91
+++ ((  mem >= 1024 || util >= 10  ))
+++ busy=1
+++ break
+++ ((  busy == 0  ))
+++ stable=0
+++ write_status waiting_for_idle_gpus setup stable=0/3
+++ local phase=waiting_for_idle_gpus variant=setup detail=stable=0/3 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
++++ date '+%F %T %Z'
+++ printf 'timestamp=%q\n' '2026-08-28 17:57:44 CST'
+++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' waiting_for_idle_gpus setup stable=0/3
+++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
+++ ((  stable == 3  ))
+++ sleep 10
+++ ((  stable < 3  ))
+++ local busy=0 mem util
+++ IFS=,
+++ read -r mem util
++++ nvidia-smi --query-gpu=memory.used,utilization.gpu --format=csv,noheader,nounits
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ ((  busy == 0  ))
+++ stable=1
+++ write_status waiting_for_idle_gpus setup stable=1/3
+++ local phase=waiting_for_idle_gpus variant=setup detail=stable=1/3 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
++++ date '+%F %T %Z'
+++ printf 'timestamp=%q\n' '2026-08-28 17:57:54 CST'
+++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' waiting_for_idle_gpus setup stable=1/3
+++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
+++ ((  stable == 3  ))
+++ sleep 10
+++ ((  stable < 3  ))
+++ local busy=0 mem util
+++ IFS=,
+++ read -r mem util
++++ nvidia-smi --query-gpu=memory.used,utilization.gpu --format=csv,noheader,nounits
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ ((  busy == 0  ))
+++ stable=2
+++ write_status waiting_for_idle_gpus setup stable=2/3
+++ local phase=waiting_for_idle_gpus variant=setup detail=stable=2/3 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
++++ date '+%F %T %Z'
+++ printf 'timestamp=%q\n' '2026-08-28 17:58:04 CST'
+++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' waiting_for_idle_gpus setup stable=2/3
+++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
+++ ((  stable == 3  ))
+++ sleep 10
+++ ((  stable < 3  ))
+++ local busy=0 mem util
+++ IFS=,
+++ read -r mem util
++++ nvidia-smi --query-gpu=memory.used,utilization.gpu --format=csv,noheader,nounits
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ mem=0
+++ util=0
+++ ((  mem >= 1024 || util >= 10  ))
+++ IFS=,
+++ read -r mem util
+++ ((  busy == 0  ))
+++ stable=3
+++ write_status waiting_for_idle_gpus setup stable=3/3
+++ local phase=waiting_for_idle_gpus variant=setup detail=stable=3/3 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
++++ date '+%F %T %Z'
+++ printf 'timestamp=%q\n' '2026-08-28 17:58:14 CST'
+++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' waiting_for_idle_gpus setup stable=3/3
+++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
+++ ((  stable == 3  ))
+++ ((  stable < 3  ))
+++ write_status running freeze_v train_iters=1000,resume=1
+++ local phase=running variant=freeze_v detail=train_iters=1000,resume=1 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
++++ date '+%F %T %Z'
+++ printf 'timestamp=%q\n' '2026-08-28 17:58:14 CST'
+++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' running freeze_v train_iters=1000,resume=1
+++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env
+++ set +e
++++ [[ 1000 == 100 ]]
++++ echo 0
+++ env LOONGFORGE_PATH=/workspace/LoongForge PYTHONPATH=/workspace/Loong-Megatron: LOCAL_VLA_ARTIFACTS_ROOT=/raid0/fastwam/vla_artifacts TRAIN_ITERS=1000 GPUS_PER_NODE=8 PER_DEVICE_BATCH_SIZE=1 GRADIENT_ACCUMULATION_STEPS=1 NUM_WORKERS=0 SEED=42 SAVE_INTERVAL=0 MASTER_PORT=31202 OUTPUT_DIR=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1 ACTION_DIT_PRETRAINED_PATH=/raid0/fastwam/vla_artifacts/fastwam/models/ActionDiT_linear_interp_Wan22_alphascale_1024hdim.pt TEXT_EMBEDDING_CACHE_DIR=/raid0/fastwam/vla_artifacts/fastwam/datasts/text_embeds DIFFSYNTH_MODEL_BASE_PATH=/raid0/fastwam/vla_artifacts/fastwam/models DIFFSYNTH_SKIP_DOWNLOAD=true DATASET_PATH=/raid0/fastwam/vla_artifacts/fastwam/datasets/LIBERO-fastwam/libero_10_no_noops_lerobot bash /workspace/LoongForge/examples/embodied/fastwam/run_fastwam_sft_ddp_zero1_finetune.sh --ddp-comm-hook powersgd_plus_hook --ddp-powersgd-matrix-approximation-rank 1 --ddp-powersgd-start-iter 199 --ddp-powersgd-min-compression-rate 4.0 --ddp-powersgd-plus-restart-period 50 --ddp-powersgd-plus-restart-method approximate --ddp-powersgd-freeze-v --ddp-powersgd-freeze-v-start-step 301 --ddp-powersgd-global-step-offset 100 --ddp-powersgd-scheduled-start-step 300 --zero-optimizer --zero-parameters-as-bucket-view --save-format dcp --lr-decay-iters 1000 --resume
+++ local rc=0
+++ set -e
+++ echo 0
++ rc=0
++ local step
+++ last_step /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1/metrics.jsonl
+++ [[ -f /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1/metrics.jsonl ]]
+++ sed -nE 's/.*"step": ([0-9]+).*/\1/p' /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/powersgd_plus_freeze_v_rank1/metrics.jsonl
+++ tail -1
++ step=1000
++ [[ 0 == 0 ]]
++ [[ 1000 == 1000 ]]
++ printf '%s\tsuccess\t1\tcompleted_step=1000\n' powersgd_plus_freeze_v_rank1
++ return 0
++ write_status completed all dense_vs_powersgd_plus_freeze_v_rank1
++ local phase=completed variant=all detail=dense_vs_powersgd_plus_freeze_v_rank1 tmp=/raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp
+++ date '+%F %T %Z'
++ printf 'timestamp=%q\n' '2026-08-28 18:15:47 CST'
++ printf 'phase=%q\nvariant=%q\ndetail=%q\n' completed all dense_vs_powersgd_plus_freeze_v_rank1
++ mv /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env.tmp /raid0/fastwam/experiments/fastwam_powersgd_plus_freeze_v_fair_a800_100_1000_v1/status.env

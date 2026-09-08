@@ -1,0 +1,100 @@
+{
+  "experiment": "pi05_restart_ablation_a800_20260904",
+  "model": "Pi0.5",
+  "remote_root": "/raid0/fastwam/experiments/pi05_restart_ablation_a800_100_500_v9",
+  "local_metrics_root": "/Users/lijianhao/Desktop/pro6k/experiments/pi05_restart_ablation_v1/output_v9",
+  "reference_dense": "/Users/lijianhao/Desktop/pro6k/experiments/pi05_restart_ablation_v1/output_v9/dense_reference.metrics.jsonl",
+  "checkpoint_step": 300,
+  "target_step": 500,
+  "aligned_steps": "301-500",
+  "seed": 42,
+  "shared_config": {
+    "optimizer": "AdamW",
+    "lr_base": 2.5e-5,
+    "lr_decay_iters": 1000,
+    "lr_warmup_iters": 10,
+    "min_lr": 1.0e-6,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.95,
+    "adam_eps": 1.0e-8,
+    "weight_decay": 0.01,
+    "clip_grad": 1.0,
+    "dtype": "bfloat16",
+    "per_device_batch_size": 12,
+    "num_workers": 4,
+    "gradient_checkpointing": true,
+    "zero_optimizer": true,
+    "rank": 1,
+    "min_compression_rate": 4.0,
+    "global_step_offset": 300
+  },
+  "variants": {
+    "approx_restart": {
+      "hook": "powersgd_plus_hook",
+      "restart_method": "approximate",
+      "restart_period": 50,
+      "restart_steps": [303, 353, 403, 453],
+      "mae_vs_dense": 0.000758901685,
+      "mape_vs_dense_percent": 0.467739,
+      "max_abs_error_vs_dense": 0.00433908403,
+      "last20_mean_loss": 0.1616373,
+      "final_loss": 0.172011182,
+      "mean_step_time_seconds": 1.7106,
+      "median_step_time_seconds": 1.5790,
+      "mean_samples_per_second": 7.2349,
+      "nan_iterations": 0,
+      "skipped_iterations": 0
+    },
+    "exact_flush_restart": {
+      "hook": "exact_flush_powersgd_plus_hook",
+      "restart_method": "exact_flush",
+      "restart_period": 50,
+      "restart_steps": [303, 353, 403, 453],
+      "restart_update": "dense gradient directly updates parameter, m, and v on restart step",
+      "mae_vs_dense": 0.000746469423,
+      "mape_vs_dense_percent": 0.458827,
+      "max_abs_error_vs_dense": 0.00357010961,
+      "last20_mean_loss": 0.161647607,
+      "final_loss": 0.172211826,
+      "mean_step_time_seconds": 1.6996,
+      "median_step_time_seconds": 1.5743,
+      "mean_samples_per_second": 7.2552,
+      "nan_iterations": 0,
+      "skipped_iterations": 0
+    },
+    "no_restart": {
+      "hook": "powersgd_plus_hook",
+      "restart_method": "approximate",
+      "restart_period": 1000000,
+      "restart_steps": [],
+      "mae_vs_dense": 0.000772921368,
+      "mape_vs_dense_percent": 0.475769,
+      "max_abs_error_vs_dense": 0.00396412611,
+      "last20_mean_loss": 0.161720274,
+      "final_loss": 0.172286093,
+      "mean_step_time_seconds": 1.6856,
+      "median_step_time_seconds": 1.5732,
+      "mean_samples_per_second": 7.2989,
+      "nan_iterations": 0,
+      "skipped_iterations": 0
+    }
+  },
+  "pairwise": {
+    "approx_vs_exact_flush_mae": 0.000295288339,
+    "approx_vs_exact_flush_max_abs": 0.00133053958,
+    "final_approx_minus_exact_flush": -0.000200644135
+  },
+  "restart_neighborhood_action_loss": {
+    "303": {"dense": 0.186287999, "approx": 0.186287999, "exact_flush": 0.186287999, "no_restart": 0.186287999},
+    "353": {"dense": 0.163624585, "approx": 0.163734913, "exact_flush": 0.163777992, "no_restart": 0.163734913},
+    "403": {"dense": 0.153452694, "approx": 0.157791778, "exact_flush": 0.157022804, "no_restart": 0.157416821},
+    "453": {"dense": 0.174437061, "approx": 0.176637575, "exact_flush": 0.176555857, "no_restart": 0.176284969}
+  },
+  "validity": {
+    "v8": "invalid compressed comparison: FP32 tail bucket did not advance state.iter, so all branches effectively ran dense",
+    "v9": "valid exploratory comparison after minimal iteration-bookkeeping fix; BF16 bucket compressed and FP32 bucket exact-allreduced",
+    "source_backup": "/workspace/LoongForge/loongforge/embodied/distributed/ddp_utils/ddp_comm_hook.py.pre_v9_iter_bookkeeping",
+    "gpu_released": true,
+    "errors": []
+  }
+}

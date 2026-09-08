@@ -1,0 +1,4 @@
+variant,hook,restart_steps,mae_vs_dense,mape_vs_dense_percent,max_abs_error,last20_mean_loss,final_loss,mean_step_time_seconds,mean_samples_per_second,nan_iterations,skipped_iterations
+approx_restart,powersgd_plus_hook,"303;353;403;453",0.000758901685,0.467739,0.00433908403,0.1616373,0.172011182,1.7106,7.2349,0,0
+exact_flush_restart,exact_flush_powersgd_plus_hook,"303;353;403;453",0.000746469423,0.458827,0.00357010961,0.161647607,0.172211826,1.6996,7.2552,0,0
+no_restart,powersgd_plus_hook,,0.000772921368,0.475769,0.00396412611,0.161720274,0.172286093,1.6856,7.2989,0,0

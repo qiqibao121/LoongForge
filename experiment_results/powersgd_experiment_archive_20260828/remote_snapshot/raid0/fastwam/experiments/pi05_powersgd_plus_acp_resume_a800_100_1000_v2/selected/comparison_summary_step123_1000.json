@@ -1,0 +1,50 @@
+[
+  {
+    "variant": "baseline",
+    "num_steps": 878,
+    "first_step": 123,
+    "last_step": 1000,
+    "mean_action_loss": 0.16277219007186303,
+    "mean_abs_loss_error": 0.0,
+    "mean_relative_loss_error_pct": 0.0,
+    "max_abs_loss_error": 0.0,
+    "final_action_loss": 0.13402940332889557,
+    "final_loss_delta": 0.0,
+    "mean_step_time_s": 0.9754171675136554,
+    "step_time_change_pct": 0.0,
+    "mean_samples_per_sec": 12.302700372924763,
+    "throughput_change_pct": 0.0
+  },
+  {
+    "variant": "powersgd_plus",
+    "num_steps": 878,
+    "first_step": 123,
+    "last_step": 1000,
+    "mean_action_loss": 0.17037105740202857,
+    "mean_abs_loss_error": 0.0076301595310686934,
+    "mean_relative_loss_error_pct": 4.7479527394183245,
+    "max_abs_loss_error": 0.024157002568244934,
+    "final_action_loss": 0.1425328403711319,
+    "final_loss_delta": 0.008503437042236328,
+    "mean_step_time_s": 3.430677987198744,
+    "step_time_change_pct": 251.71392317643577,
+    "mean_samples_per_sec": 3.8400363550657315,
+    "throughput_change_pct": -68.78704480589715
+  },
+  {
+    "variant": "acp_powersgd_plus",
+    "num_steps": 878,
+    "first_step": 123,
+    "last_step": 1000,
+    "mean_action_loss": 0.1734821514686854,
+    "mean_abs_loss_error": 0.010725937104849717,
+    "mean_relative_loss_error_pct": 6.659441622412082,
+    "max_abs_loss_error": 0.039390817284584045,
+    "final_action_loss": 0.14479228854179382,
+    "final_loss_delta": 0.010762885212898254,
+    "mean_step_time_s": 3.1031426172077343,
+    "step_time_change_pct": 218.1349191462013,
+    "mean_samples_per_sec": 4.25547306360066,
+    "throughput_change_pct": -65.41025193976179
+  }
+]

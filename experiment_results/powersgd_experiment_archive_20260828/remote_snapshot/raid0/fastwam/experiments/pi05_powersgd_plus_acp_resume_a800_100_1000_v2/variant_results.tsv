@@ -1,0 +1,4 @@
+variant	result	attempt	detail
+baseline	success	1	completed_step=1000
+powersgd_plus	success	1	completed_step=1000
+acp_powersgd_plus	success	1	completed_step=1000

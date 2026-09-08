@@ -1,0 +1,40 @@
+{
+  "experiment": "pi05_v_residual_diag",
+  "root": "/raid0/fastwam/experiments/pi05_v_residual_diag_v3",
+  "status": "completed",
+  "target_step": 330,
+  "compression_start_step": 301,
+  "seed": 42,
+  "rank": 1,
+  "restart_period": 50,
+  "lr_decay_iters": 1000,
+  "diagnostic_window": "steps_302_329",
+  "sample_numel_per_bucket": 100000,
+  "trajectory": "single normal PowerSGD+ trajectory; telemetry only, no parameter-update change",
+  "loss": {
+    "step330": 0.1721830666065216,
+    "mean_301_330": 0.17073646187782288,
+    "min_301_330": 0.13437311351299286,
+    "max_301_330": 0.22569820284843445
+  },
+  "signals_302_329": {
+    "residual_prev_over_raw_rms_all": 4.095558,
+    "residual_prev_over_dense_rms_all": 6.953169,
+    "residual_prev_over_dense_rms_step_median": 7.359094,
+    "compression_error_over_dense_rms_all": 0.929026,
+    "cross_2g_delta_over_dense_sq_all": -1.34281,
+    "delta_sq_over_dense_sq_all": 1.380182,
+    "signed_v_increment_error_over_dense_sq_all": 0.037372,
+    "absolute_v_increment_error_over_dense_sq_all": 1.316522,
+    "cross_step_median": -1.421773,
+    "delta_sq_step_median": 1.298412,
+    "signed_v_increment_error_step_median": 0.035432
+  },
+  "health": {"nan": false, "oom": false, "nccl_error": false},
+  "caveats": [
+    "Signals use the first 100000 elements of each bucket and are not full-model norms.",
+    "Residual ratios use local raw gradients; dense-gradient ratios use the sampled pre-EF all-reduce.",
+    "The cross and quadratic terms are individually large and largely cancel in signed aggregate; this is evidence of sensitivity, not a full counterfactual loss comparison.",
+    "Steps 301 and 330 are excluded from window aggregates because 301 is a restart step and the final callback has incomplete bucket coverage."
+  ]
+}

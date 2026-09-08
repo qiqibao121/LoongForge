@@ -1,0 +1,5 @@
+variant	result	attempt	detail
+exact_flush_start300	success	1	completed_step=1000,hook=exact_flush_powersgd_plus_hook
+lr_rank2_start300	success	1	completed_step=1000,hook=lr_rank_powersgd_plus_hook
+dynamic_period_start300	success	1	completed_step=1000,hook=dynamic_period_powersgd_plus_hook
+standard_powersgd_plus_start300	success	1	completed_step=1000,hook=powersgd_plus_hook,start_iter=199

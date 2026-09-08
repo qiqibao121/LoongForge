@@ -1,0 +1,55 @@
+{
+  "experiment": "pi05_v_shadow_decomposition_a800_100_1000_v1",
+  "root": "/raid0/fastwam/experiments/pi05_v_shadow_decomposition_a800_100_1000_v1",
+  "completed": true,
+  "completed_at": "2026-09-03 15:54:41 CST",
+  "model": "pi05",
+  "train_steps": "1-360",
+  "compression_start_step": 301,
+  "rank": 1,
+  "restart_period": 50,
+  "beta1": 0.9,
+  "beta2": 0.95,
+  "gradient_checkpointing": true,
+  "compile_model": false,
+  "shadow_sampling": "first 4096 elements of first 8 buckets",
+  "metrics": {
+    "final_step": 360,
+    "final_action_loss": 0.16879065334796906,
+    "mean_action_loss_steps_351_360": 0.1698272168636322,
+    "mean_action_loss_steps_1_360": 0.204748430682553,
+    "mean_step_time_sec": 1.6659303653513133,
+    "mean_samples_per_sec_per_device": 7.402896956536415,
+    "nan_iterations": 0,
+    "skipped_iterations": 0,
+    "gpu_memory_end_mib": 0
+  },
+  "shadow_v_steps": "302-359",
+  "shadow_v_rows": 456,
+  "shadow_v_summary": {
+    "per_step_median_v_ef_over_v_exact_norm": 0.231100209529967,
+    "per_step_median_v_diff_rel": 0.8536489407831946,
+    "per_step_median_cross_over_dense_sq": -1.8176032322851778,
+    "per_step_median_quad_over_dense_sq": 0.9240180945700054,
+    "per_step_median_signed_sq_error_over_dense_sq": -0.9053087407001583,
+    "per_step_median_v_cross_diff_rel": 1.6766469454818738
+  },
+  "health": {
+    "nan": false,
+    "oom": false,
+    "nccl_error": false,
+    "gpus_released": true
+  },
+  "interpretation": "On the sampled rank-1 PowerSGD+ trajectory, the EF-corrected dense reference and actual compressed gradient produce a large second-moment divergence; v_ef is substantially smaller than v_exact and the cross/quadratic terms do not cancel in this corrected-gradient comparison.",
+  "caveats": [
+    "Shadow EMAs start at zero and are incremental diagnostics, not the persisted AdamW v state.",
+    "Only 4096 elements in 8 buckets are sampled; values are not whole-model averages.",
+    "The run is one real P+ trajectory, so action loss is not a paired exact-v training outcome."
+  ],
+  "artifacts": {
+    "metrics": "experiments/pi05_v_shadow_decomposition_v1/output/metrics.jsonl",
+    "shadow": "experiments/pi05_v_shadow_decomposition_v1/output/shadow_v_diag.jsonl",
+    "train_log": "experiments/pi05_v_shadow_decomposition_v1/output/train.log",
+    "status": "experiments/pi05_v_shadow_decomposition_v1/status.env"
+  }
+}

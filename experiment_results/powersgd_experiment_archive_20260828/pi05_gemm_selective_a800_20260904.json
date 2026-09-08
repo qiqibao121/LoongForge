@@ -1,0 +1,94 @@
+{
+  "experiment": "pi05_gemm_selective_powersgd_a800_300_1000_v1",
+  "model": "Pi0.5",
+  "source_root": "/raid0/fastwam/experiments/pi05_gemm_selective_powersgd_a800_300_1000_v1",
+  "local_output": "/Users/lijianhao/Desktop/pro6k/experiments/pi05_restart_ablation_v1/output_gemm_selective_a800",
+  "checkpoint": "pi05_precision_mechanisms_start300_a800_100_1000_v1/.../checkpoints/steps_300",
+  "alignment": {"start_step": 301, "end_step": 1000, "steps": 700, "seed": 42},
+  "common_config": {
+    "optimizer": "AdamW",
+    "micro_batch_size": 12,
+    "num_workers": 4,
+    "gradient_checkpointing": true,
+    "lr_decay_iters": 1000,
+    "power_sgd_rank": 1,
+    "power_sgd_start_iter": 2,
+    "global_step_offset": 300,
+    "restart_period": 50,
+    "restart_method": "approximate",
+    "min_compression_rate": 4.0
+  },
+  "selection_rules": {
+    "min_bytes": 65536,
+    "selective_gemm_regex": "(q_proj|k_proj|v_proj|o_proj|qkv|up_proj|down_proj|gate_proj|wq|wk|wv|wo|fc[0-9]*)",
+    "selective_gemm_other_allreduce": "exact",
+    "selective_all2d": "rank-1 for tensors with ndim=2 and bytes>65536; otherwise exact"
+  },
+  "variants": {
+    "dense": {
+      "hook": "allreduce_hook",
+      "final_action_loss": 0.1339544802904129,
+      "last20_action_loss_mean": 0.14931262508034707,
+      "step_time_mean_all": 1.615030347998254,
+      "step_time_mean_last20": 1.592741321027279,
+      "mae_vs_dense": 0.0,
+      "mape_percent_vs_dense": 0.0,
+      "max_abs_error_vs_dense": 0.0,
+      "nan_iterations": 0,
+      "skipped_iterations": 0
+    },
+    "powersgd_plus": {
+      "hook": "powersgd_plus_hook",
+      "final_action_loss": 0.13524390757083893,
+      "last20_action_loss_mean": 0.15055469572544097,
+      "step_time_mean_all": 1.65939668344234,
+      "step_time_mean_last20": 1.6115608908818104,
+      "mae_vs_dense": 0.0010944648193461554,
+      "mape_percent_vs_dense": 0.7055164329437515,
+      "max_abs_error_vs_dense": 0.00549045205116272,
+      "nan_iterations": 0,
+      "skipped_iterations": 0,
+      "selected_tensor_count": "not instrumented by hook"
+    },
+    "selective_gemm": {
+      "hook": "layerwise_powersgd_hook",
+      "final_action_loss": 0.1410694718360901,
+      "last20_action_loss_mean": 0.15076395347714425,
+      "step_time_mean_all": 1.772556006288422,
+      "step_time_mean_last20": 1.6871802010922692,
+      "mae_vs_dense": 0.007041521423629352,
+      "mape_percent_vs_dense": 4.504680539208875,
+      "max_abs_error_vs_dense": 0.027931690216064453,
+      "nan_iterations": 0,
+      "skipped_iterations": 0,
+      "selected_tensor_count_first_refresh": 382,
+      "eligible_tensor_count_first_refresh": 813,
+      "selected_tensor_byte_share_first_refresh": 0.6177099698577944,
+      "selected_bytes_bf16_first_refresh": 5118844928,
+      "eligible_bytes_bf16_first_refresh": 8286809632
+    },
+    "selective_all2d": {
+      "hook": "layerwise_powersgd_hook",
+      "final_action_loss": 0.14339129626750946,
+      "last20_action_loss_mean": 0.15180208012461663,
+      "step_time_mean_all": 1.7850908396559368,
+      "step_time_mean_last20": 1.6749829945154489,
+      "mae_vs_dense": 0.007538915638412748,
+      "mape_percent_vs_dense": 4.810843591682176,
+      "max_abs_error_vs_dense": 0.04341445863246918,
+      "nan_iterations": 0,
+      "skipped_iterations": 0,
+      "selected_tensor_count_first_refresh": 454,
+      "eligible_tensor_count_first_refresh": 813,
+      "selected_tensor_byte_share_first_refresh": 0.7828797619469678,
+      "selected_bytes_bf16_first_refresh": 6487575552,
+      "eligible_bytes_bf16_first_refresh": 8286809632
+    }
+  },
+  "completion": {
+    "status": "4/4 success through step 1000",
+    "remote_completed_at": "2026-09-04 03:14:08 CST",
+    "errors": "No NaN/Inf, OOM, CUDA/NCCL, or shape errors observed; NCCL destroy messages are normal teardown.",
+    "gpu_note": "GPU query after completion showed unrelated torchrun usage; no external process was terminated."
+  }
+}

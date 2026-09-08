@@ -1,0 +1,14 @@
+{
+  "source": "/raid0/fastwam/experiments/cosmos3_adaptive_selector_a800_100_1000_v1",
+  "decision": "dense",
+  "pilot_relative_loss_delta": 0.3093705641683024,
+  "pilot_speed_ratio": 1.1955924052346383,
+  "selected_status": "success",
+  "selected_last_step": 1000,
+  "selected_action_loss_mean_steps_603_1000": 0.017159110630146374,
+  "selected_mean_step_time_s": 2.00468530995893,
+  "selected_mean_throughput": 0.5023213387227854,
+  "nan_iterations": 0,
+  "skipped_iterations": 0,
+  "notes": "20-step dense and PowerSGD+ pilots from the same step600 checkpoint; dense selected because PowerSGD+ exceeded the loss guardrail. Speed was recorded only."
+}

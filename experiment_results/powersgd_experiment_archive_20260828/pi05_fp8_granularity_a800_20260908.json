@@ -1,0 +1,22 @@
+{
+  "experiment": "pi05_fp8_granularity_precision",
+  "remote_root": "/raid0/fastwam/experiments/pi05_fp8_granularity_long_a800_v1",
+  "scope": "gradient-only FP8-like quantization reference hook",
+  "checkpoint": "step300",
+  "steps": "301-1000",
+  "modes": {
+    "dense": {"final_action_loss": 0.1339544802904129, "mae": 0.0, "mape_pct": 0.0, "max_abs_error": 0.0, "last20_mean": 0.14931262508034707, "mean_step_time_s": 0.9890122632699244, "mean_samples_per_sec": 12.140531861700076},
+    "gradient_row": {"final_action_loss": 0.13385547697544098, "mae": 0.00024319096335342953, "mape_pct": 0.1553468353125, "max_abs_error": 0.0022452175617218018, "max_error_step": 582, "last20_mean": 0.14934299439191817, "mean_step_time_s": 1.347160742140158, "mean_samples_per_sec": 8.920366866397872},
+    "gradient_block_128": {"final_action_loss": 0.1343505084514618, "mae": 0.0002743731651987348, "mape_pct": 0.17441220811109226, "max_abs_error": 0.001689523458480835, "max_error_step": 838, "last20_mean": 0.14935243427753447, "mean_step_time_s": 4.044088025440133, "mean_samples_per_sec": 3.0455000897259987}
+  },
+  "selected_tensor_instances": 461,
+  "selected_buckets": 144,
+  "selected_bytes": 9351534592,
+  "total_gradient_bytes": 9353911360,
+  "selected_byte_coverage_pct": 99.974595,
+  "block_first_attempt": "CUDA OOM; log retained",
+  "block_retry": "completed with expandable_segments and max_split_size_mb=128",
+  "nan_or_skipped": 0,
+  "code_restored": true,
+  "limitations": ["gradient-only because current DDP path has no parameter communication hook", "reference dequantize plus exact all-reduce; timing is not production FP8 bandwidth"]
+}

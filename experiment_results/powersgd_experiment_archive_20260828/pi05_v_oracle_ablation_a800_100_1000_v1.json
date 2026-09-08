@@ -1,0 +1,48 @@
+{
+  "experiment": "pi05_v_oracle_ablation_a800_100_1000_v1",
+  "root": "/raid0/fastwam/experiments/pi05_v_oracle_ablation_a800_100_1000_v1",
+  "status": "completed",
+  "target_step": 1000,
+  "compression_start_step": 301,
+  "seed": 42,
+  "dtype": "bfloat16",
+  "optimizer": "AdamW",
+  "rank": 1,
+  "restart_period": 50,
+  "error_feedback": true,
+  "variants": {
+    "dense": {
+      "action_loss_final": 0.1344645917415619,
+      "step_time_s": 1.0199647368863225,
+      "samples_per_sec_per_device": 11.765112622062569,
+      "nan_iterations": 0,
+      "skipped_iterations": 0
+    },
+    "powersgd_plus": {
+      "action_loss_final": 0.13739699125289917,
+      "step_time_s": 1.6524913730099797,
+      "samples_per_sec_per_device": 7.261762570138107,
+      "nan_iterations": 0,
+      "skipped_iterations": 0
+    },
+    "powersgd_plus_dense_v": {
+      "action_loss_final": 0.13820357620716095,
+      "step_time_s": 1.8218923299573362,
+      "samples_per_sec_per_device": 6.586558273880547,
+      "nan_iterations": 0,
+      "skipped_iterations": 0
+    }
+  },
+  "historical_freeze_v_comparator": {
+    "source": "pi05_powersgd_plus_freeze_v_fair_a800_100_1000_v2",
+    "mae": 0.004815048128,
+    "mape_percent": 3.082336632,
+    "max_error": 0.02863560617,
+    "step_time_s": 2.840724459,
+    "samples_per_sec_per_device": 4.622484504
+  },
+  "notes": [
+    "Initial attempt failed before training because megatron.training was not on PYTHONPATH; preserved under attempts.",
+    "Successful rerun added /workspace/Loong-Megatron to PYTHONPATH; historical results were not overwritten."
+  ]
+}

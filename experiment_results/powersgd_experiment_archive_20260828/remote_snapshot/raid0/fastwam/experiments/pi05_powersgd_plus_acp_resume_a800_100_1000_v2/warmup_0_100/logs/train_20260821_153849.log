@@ -1,0 +1,375 @@
+[2026-08-21 15:38:49][INFO] 
+------------------------ training training_args ------------------------
+  activation_checkpoint_module_patterns ........... None
+  activation_checkpoint_skip_modules .............. None
+  adam_beta1 ...................................... 0.9
+  adam_beta2 ...................................... 0.95
+  adam_eps ........................................ 1e-08
+  async_save ...................................... False
+  batch_drop_last ................................. True
+  check_for_nan_in_loss_and_grad .................. True
+  clip_grad ....................................... 1.0
+  config_file ..................................... None
+  cuda_graph_ddp_sync_in_graph .................... False
+  cuda_graph_grad_sync_bucket_mb .................. 200.0
+  cuda_graph_grad_sync_dtype ...................... fp32
+  cuda_graph_grad_sync_impl ....................... coalesced
+  cuda_graph_impl ................................. none
+  cuda_graph_pad_length ........................... None
+  cuda_graph_scope ................................ full_iteration
+  cuda_graph_warmup_steps ......................... 3
+  cudnn_benchmark ................................. False
+  data_root_dir ................................... None
+  dataloader_multiprocessing_context .............. None
+  dataloader_seed_workers ......................... False
+  dataset_format .................................. lerobot_datasets
+  dataset_path .................................... /raid0/fastwam/vla_artifacts/pi05/datasets/libero
+  dataset_strategy ................................ default
+  ddp_batched_grad_copy ........................... False
+  ddp_broadcast_buffers ........................... True
+  ddp_bucket_cap_mb ............................... None
+  ddp_bucket_cap_mb_list .......................... None
+  ddp_comm_hook ................................... None
+  ddp_comm_hook_logging ........................... False
+  ddp_dynamic_powersgd_adapt_interval ............. 5
+  ddp_dynamic_powersgd_high_rank .................. 4
+  ddp_dynamic_powersgd_low_rank ................... 1
+  ddp_dynamic_powersgd_relative_change_threshold .. 0.1
+  ddp_find_unused_parameters ...................... True
+  ddp_gradient_as_bucket_view ..................... True
+  ddp_init_sync ................................... True
+  ddp_layerwise_powersgd_candidate_ranks .......... 1,2,4,8,16
+  ddp_layerwise_powersgd_log_tensor_stats ......... False
+  ddp_layerwise_powersgd_power_iterations ......... 2
+  ddp_layerwise_powersgd_refresh_period ........... 50
+  ddp_layerwise_powersgd_relative_error ........... 0.1
+  ddp_layerwise_powersgd_uncompressed_patterns .... 
+  ddp_powersgd_matrix_approximation_rank .......... 1
+  ddp_powersgd_min_compression_rate ............... 2.0
+  ddp_powersgd_plus_restart_method ................ approximate
+  ddp_powersgd_plus_restart_period ................ 50
+  ddp_powersgd_start_iter ......................... 1000
+  ddp_separate_compression_ratio .................. 16.0
+  ddp_separate_error_feedback_beta ................ 0.95
+  ddp_separate_error_reset_interval ............... 128
+  ddp_skip_all_reduce_unused_params ............... False
+  ddp_static_graph ................................ True
+  detail_log_interval ............................. 20
+  deterministic_mode .............................. False
+  disable_tf32 .................................... False
+  distributed_sampler_mode ........................ cyclic
+  distributed_strategy ............................ ddp
+  dtype ........................................... bfloat16
+  dynamo_optimize_ddp ............................. False
+  freeze_modules .................................. 
+  fsdp_backward_prefetch_distance ................. 0
+  fsdp_cast_forward_inputs ........................ True
+  fsdp_forward_prefetch_distance .................. 0
+  fsdp_leftover_min_num_params .................... 1000000
+  fsdp_min_num_params ............................. 1000000
+  fsdp_no_wrap_modules ............................ None
+  fsdp_original_param_dtype ....................... None
+  fsdp_reduce_dtype ............................... fp32
+  fsdp_reshard_default ............................ None
+  fsdp_reshard_module_overrides ................... None
+  fsdp_reshard_root ............................... False
+  fsdp_unsharded_param_dtype ...................... None
+  fsdp_wrap_modules ............................... None
+  gradient_accumulation_steps ..................... 1
+  hsdp_shard_size ................................. None
+  init_on_meta .................................... False
+  lambda_cycle_length ............................. 10000
+  lambda_f_max .................................... 0.4
+  lambda_f_min .................................... 0.0
+  lambda_f_start .................................. 0.0
+  lerobotdataset_version .......................... v3.0
+  log_interval .................................... 1
+  lora_alpha ...................................... 32
+  lora_bias ....................................... none
+  lora_dropout .................................... 0.0
+  lora_init ....................................... true
+  lora_modules_to_save ............................ None
+  lora_r .......................................... 16
+  lora_target_modules ............................. None
+  loss_log_rank ................................... [-1]
+  loss_spike_threshold ............................ 100.0
+  lr_base ......................................... 2.5e-05
+  lr_decay_iters .................................. 1000
+  lr_decay_style .................................. cosine_with_min_lr
+  lr_end .......................................... 1e-07
+  lr_group ........................................ None
+  lr_warmup_iters ................................. 10
+  manual_gc ....................................... False
+  manual_gc_interval .............................. 0
+  min_lr .......................................... 1e-06
+  model_name ...................................... pi05
+  num_cycles ...................................... 1.0
+  num_samples ..................................... 100
+  num_workers ..................................... 4
+  optimizer ....................................... AdamW
+  output_dir ...................................... /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/warmup_0_100
+  per_device_batch_size ........................... 12
+  polynomial_power ................................ 1.0
+  pretrained_checkpoint ........................... /raid0/fastwam/vla_artifacts/pi05/models/pi05_base
+  profile_output_dir .............................. None
+  profile_ranks ................................... [0]
+  profile_step_end ................................ 12
+  profile_step_start .............................. 10
+  resume .......................................... False
+  robot_type ...................................... libero_franka
+  sampler_shuffle ................................. True
+  save_format ..................................... dcp
+  save_interval ................................... 100
+  save_training_state ............................. True
+  seed ............................................ 42
+  set_seed_by_rank ................................ False
+  split ........................................... train
+  streaming ....................................... False
+  task_name ....................................... perform the task
+  tensorboard_dir ................................. /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/warmup_0_100/tensorboard
+  tensorboard_queue_size .......................... 1000
+  timing_log_level ................................ 0
+  tokenizer_path .................................. /raid0/fastwam/vla_artifacts/pi05/tokenizers/paligemma-3b-pt-224
+  train_iters ..................................... 100
+  trainer_type .................................... FinetuneTrainer
+  use_lora ........................................ False
+  use_nsys_profiler ............................... False
+  use_pytorch_profiler ............................ False
+  video_backend ................................... torchcodec
+  wandb_mode ...................................... disabled
+  wandb_project ................................... loongforge-vla
+  weight_decay .................................... 0.01
+  weight_decay_grouping ........................... all
+  zero_master_param_dtype ......................... none
+  zero_optimizer .................................. True
+  zero_parameters_as_bucket_view .................. True
+-------------------- end of training training_args ---------------------
+[2026-08-21 15:38:49][INFO] 
+------------------------ model config ------------------------
+  action_dim ...................................... 7
+  action_horizon .................................. 50
+  compile_dynamic ................................. False
+  compile_fullgraph ............................... True
+  compile_mode .................................... max-autotune
+  compile_model ................................... False
+  compile_scope ................................... multi_group
+  freeze_vision_encoder ........................... False
+  gradient_checkpointing .......................... False
+  max_action_dim .................................. 32
+  max_state_dim ................................... 32
+  model_type ...................................... pi05
+  state_dim ....................................... 7
+  train_expert_only ............................... False
+-------------------- end of model config ---------------------
+[2026-08-21 15:38:49][INFO] 
+------------------------ data config ------------------------
+  action_apply_to ................................. ['action']
+  action_padding_strategy ......................... zero
+  action_transform_horizon ........................ None
+  action_transform_max_action_dim ................. None
+  action_use_statistics ........................... True
+  image_mask ...................................... None
+  image_normalize_mode ............................ identity
+  image_resize_strategy ........................... resize_with_pad
+  image_size ...................................... 224
+  max_token_len ................................... 200
+  normalization_mode .............................. q99
+  num_images ...................................... 2
+  observation_delta_indices ....................... None
+  use_action_transform ............................ True
+  use_image_transform ............................. True
+-------------------- end of data config ---------------------
+[2026-08-21 15:38:49][INFO] TensorBoard enabled: /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/warmup_0_100/tensorboard
+[2026-08-21 15:38:49][INFO] [model] start building model: model_type=pi05, class=Pi05ModelConfig
+[2026-08-21 15:41:07][INFO] [model] model built in 138.23s
+[2026-08-21 15:41:07][INFO] [ckpt] loading pretrained: /raid0/fastwam/vla_artifacts/pi05/models/pi05_base
+[2026-08-21 15:41:17][INFO] Pretrained loaded: /raid0/fastwam/vla_artifacts/pi05/models/pi05_base
+[2026-08-21 15:41:17][INFO] [ckpt] pretrained loaded in 9.69s
+[2026-08-21 15:41:17][INFO] [wrap_model] wrap_model: strategy=ddp, dtype=bfloat16
+[2026-08-21 15:41:27][INFO] [wrap_model] done in 9.71s
+[2026-08-21 15:41:27][INFO] [optimizer] building optimizer
+[2026-08-21 15:41:27][INFO] [LR Groups] Model modules (use paths below with --lr-group to set per-module LR):
+  model                                                         (4143.4M trainable params)
+    model.paligemma_with_expert                                   (4141.2M trainable params)
+      model.paligemma_with_expert.paligemma                         (3450.0M trainable params)
+      model.paligemma_with_expert.gemma_expert                      (691.3M trainable params)
+    model.action_in_proj                                          (33.8K trainable params)
+    model.action_out_proj                                         (32.8K trainable params)
+    model.time_mlp_in                                             (1.0M trainable params)
+    model.time_mlp_out                                            (1.0M trainable params)
+[2026-08-21 15:41:27][INFO] [LR Groups] Model modules with LR assignment:
+  model                                                         (4143.4M trainable params)  lr=2.50e-05
+    model.paligemma_with_expert                                   (4141.2M trainable params)  lr=2.50e-05
+      model.paligemma_with_expert.paligemma                         (3450.0M trainable params)  lr=2.50e-05
+      model.paligemma_with_expert.gemma_expert                      (691.3M trainable params)  lr=2.50e-05
+    model.action_in_proj                                          (33.8K trainable params)  lr=2.50e-05
+    model.action_out_proj                                         (32.8K trainable params)  lr=2.50e-05
+    model.time_mlp_in                                             (1.0M trainable params)  lr=2.50e-05
+    model.time_mlp_out                                            (1.0M trainable params)  lr=2.50e-05
+[2026-08-21 15:41:27][INFO] Optimizer trainable parameter dtypes: torch.bfloat16: 255 tensors/3609853952 elems, torch.float32: 558 tensors/533550864 elems
+[2026-08-21 15:41:27][INFO] Mixed dtype params {torch.bfloat16, torch.float32}: using per-dtype ZeroRedundancyOptimizer
+[2026-08-21 15:41:27][INFO] [optimizer] optimizer built in 0.17s
+[2026-08-21 15:41:27][INFO] [data] building dataloaders
+[2026-08-21 15:41:27][INFO] Using video codec: libsvtav1
+[2026-08-21 15:41:27][INFO] LeRobotV3Dataset: repo_id=libero, len=273465, action_horizon=50, fps=10.0, video_backend=torchcodec
+[2026-08-21 15:41:27][INFO] Using preprocessor: pi05
+[2026-08-21 15:41:27][INFO] [data] done in 0.43s
+[2026-08-21 15:41:27][INFO] Parameters: 4143.4M total, 4143.4M trainable (100.0%)
+[2026-08-21 15:41:27][INFO] Model: PI05Policy
+[2026-08-21 15:41:41][INFO] Dataloader 'vla' positioned at epoch=0
+[2026-08-21 15:41:50][INFO] iteration        1/     100 | consumed samples:           96 | elapsed time per iteration (ms): 9741.0 | throughput (samples/sec/per_device): 1.232 | learning rate: 2.500000E-06 | global batch size:    96 | action loss: 4.303515E-01 | loss scale: 1.0 | grad norm: 1.608629 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:41:51][INFO] iteration        2/     100 | consumed samples:          192 | elapsed time per iteration (ms): 963.0 | throughput (samples/sec/per_device): 12.462 | learning rate: 5.000000E-06 | global batch size:    96 | action loss: 4.517507E-01 | loss scale: 1.0 | grad norm: 1.728383 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:41:52][INFO] iteration        3/     100 | consumed samples:          288 | elapsed time per iteration (ms): 969.8 | throughput (samples/sec/per_device): 12.374 | learning rate: 7.500000E-06 | global batch size:    96 | action loss: 4.229249E-01 | loss scale: 1.0 | grad norm: 1.962244 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:41:53][INFO] iteration        4/     100 | consumed samples:          384 | elapsed time per iteration (ms): 971.0 | throughput (samples/sec/per_device): 12.359 | learning rate: 1.000000E-05 | global batch size:    96 | action loss: 4.612516E-01 | loss scale: 1.0 | grad norm: 1.954334 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:41:54][INFO] iteration        5/     100 | consumed samples:          480 | elapsed time per iteration (ms): 976.0 | throughput (samples/sec/per_device): 12.295 | learning rate: 1.250000E-05 | global batch size:    96 | action loss: 4.249656E-01 | loss scale: 1.0 | grad norm: 1.410722 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:41:55][INFO] iteration        6/     100 | consumed samples:          576 | elapsed time per iteration (ms): 971.2 | throughput (samples/sec/per_device): 12.355 | learning rate: 1.500000E-05 | global batch size:    96 | action loss: 4.387334E-01 | loss scale: 1.0 | grad norm: 1.452763 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:41:56][INFO] iteration        7/     100 | consumed samples:          672 | elapsed time per iteration (ms): 969.3 | throughput (samples/sec/per_device): 12.381 | learning rate: 1.750000E-05 | global batch size:    96 | action loss: 4.136762E-01 | loss scale: 1.0 | grad norm: 1.595829 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:41:57][INFO] iteration        8/     100 | consumed samples:          768 | elapsed time per iteration (ms): 972.4 | throughput (samples/sec/per_device): 12.340 | learning rate: 2.000000E-05 | global batch size:    96 | action loss: 3.881719E-01 | loss scale: 1.0 | grad norm: 1.136903 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:41:58][INFO] iteration        9/     100 | consumed samples:          864 | elapsed time per iteration (ms): 970.4 | throughput (samples/sec/per_device): 12.366 | learning rate: 2.250000E-05 | global batch size:    96 | action loss: 3.625748E-01 | loss scale: 1.0 | grad norm: 0.999241 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:41:59][INFO] iteration       10/     100 | consumed samples:          960 | elapsed time per iteration (ms): 968.6 | throughput (samples/sec/per_device): 12.389 | learning rate: 2.500000E-05 | global batch size:    96 | action loss: 3.237128E-01 | loss scale: 1.0 | grad norm: 1.003705 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:00][INFO] iteration       11/     100 | consumed samples:         1056 | elapsed time per iteration (ms): 969.6 | throughput (samples/sec/per_device): 12.376 | learning rate: 2.499994E-05 | global batch size:    96 | action loss: 3.255935E-01 | loss scale: 1.0 | grad norm: 0.857697 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:01][INFO] iteration       12/     100 | consumed samples:         1152 | elapsed time per iteration (ms): 968.6 | throughput (samples/sec/per_device): 12.389 | learning rate: 2.499976E-05 | global batch size:    96 | action loss: 3.742936E-01 | loss scale: 1.0 | grad norm: 1.185252 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:02][INFO] iteration       13/     100 | consumed samples:         1248 | elapsed time per iteration (ms): 971.5 | throughput (samples/sec/per_device): 12.353 | learning rate: 2.499946E-05 | global batch size:    96 | action loss: 2.985124E-01 | loss scale: 1.0 | grad norm: 0.881788 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:03][INFO] iteration       14/     100 | consumed samples:         1344 | elapsed time per iteration (ms): 969.4 | throughput (samples/sec/per_device): 12.378 | learning rate: 2.499903E-05 | global batch size:    96 | action loss: 3.387516E-01 | loss scale: 1.0 | grad norm: 1.080573 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:04][INFO] iteration       15/     100 | consumed samples:         1440 | elapsed time per iteration (ms): 969.5 | throughput (samples/sec/per_device): 12.377 | learning rate: 2.499849E-05 | global batch size:    96 | action loss: 2.918672E-01 | loss scale: 1.0 | grad norm: 0.810182 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:05][INFO] iteration       16/     100 | consumed samples:         1536 | elapsed time per iteration (ms): 970.4 | throughput (samples/sec/per_device): 12.366 | learning rate: 2.499782E-05 | global batch size:    96 | action loss: 3.319143E-01 | loss scale: 1.0 | grad norm: 0.883121 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:06][INFO] iteration       17/     100 | consumed samples:         1632 | elapsed time per iteration (ms): 969.8 | throughput (samples/sec/per_device): 12.374 | learning rate: 2.499704E-05 | global batch size:    96 | action loss: 3.383772E-01 | loss scale: 1.0 | grad norm: 0.888542 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:07][INFO] iteration       18/     100 | consumed samples:         1728 | elapsed time per iteration (ms): 970.7 | throughput (samples/sec/per_device): 12.362 | learning rate: 2.499613E-05 | global batch size:    96 | action loss: 2.987399E-01 | loss scale: 1.0 | grad norm: 0.736673 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:08][INFO] iteration       19/     100 | consumed samples:         1824 | elapsed time per iteration (ms): 972.0 | throughput (samples/sec/per_device): 12.346 | learning rate: 2.499511E-05 | global batch size:    96 | action loss: 3.441846E-01 | loss scale: 1.0 | grad norm: 0.758282 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:09][INFO] iteration       20/     100 | consumed samples:         1920 | elapsed time per iteration (ms): 981.8 | throughput (samples/sec/per_device): 12.223 | learning rate: 2.499396E-05 | global batch size:    96 | action loss: 2.556293E-01 | loss scale: 1.0 | grad norm: 0.650735 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:09][INFO] max time across ranks (ms):
+    forward-backward................................: 851.02
+    forward-compute.................................: 276.17
+    backward-compute................................: 573.45
+    batch-generator.................................: 1.57
+    nan-grad-cleanup................................: 13.03
+    grad-clip.......................................: 32.52
+    optimizer.......................................: 83.41
+    optimizer-inner-step............................: 83.30
+    optimizer-scheduler-step........................: 0.07
+    optimizer-zero-grad.............................: 0.78
+[2026-08-21 15:42:10][INFO] iteration       21/     100 | consumed samples:         2016 | elapsed time per iteration (ms): 972.4 | throughput (samples/sec/per_device): 12.340 | learning rate: 2.499269E-05 | global batch size:    96 | action loss: 2.876966E-01 | loss scale: 1.0 | grad norm: 0.688378 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:11][INFO] iteration       22/     100 | consumed samples:         2112 | elapsed time per iteration (ms): 971.8 | throughput (samples/sec/per_device): 12.348 | learning rate: 2.499130E-05 | global batch size:    96 | action loss: 3.346729E-01 | loss scale: 1.0 | grad norm: 0.683017 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:12][INFO] iteration       23/     100 | consumed samples:         2208 | elapsed time per iteration (ms): 973.1 | throughput (samples/sec/per_device): 12.332 | learning rate: 2.498979E-05 | global batch size:    96 | action loss: 2.973587E-01 | loss scale: 1.0 | grad norm: 0.626817 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:13][INFO] iteration       24/     100 | consumed samples:         2304 | elapsed time per iteration (ms): 973.6 | throughput (samples/sec/per_device): 12.325 | learning rate: 2.498816E-05 | global batch size:    96 | action loss: 3.013299E-01 | loss scale: 1.0 | grad norm: 0.534984 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:14][INFO] iteration       25/     100 | consumed samples:         2400 | elapsed time per iteration (ms): 972.7 | throughput (samples/sec/per_device): 12.337 | learning rate: 2.498641E-05 | global batch size:    96 | action loss: 2.667708E-01 | loss scale: 1.0 | grad norm: 0.607682 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:15][INFO] iteration       26/     100 | consumed samples:         2496 | elapsed time per iteration (ms): 973.1 | throughput (samples/sec/per_device): 12.332 | learning rate: 2.498454E-05 | global batch size:    96 | action loss: 3.072034E-01 | loss scale: 1.0 | grad norm: 0.876790 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:16][INFO] iteration       27/     100 | consumed samples:         2592 | elapsed time per iteration (ms): 972.4 | throughput (samples/sec/per_device): 12.341 | learning rate: 2.498254E-05 | global batch size:    96 | action loss: 3.755014E-01 | loss scale: 1.0 | grad norm: 0.772395 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:17][INFO] iteration       28/     100 | consumed samples:         2688 | elapsed time per iteration (ms): 973.0 | throughput (samples/sec/per_device): 12.334 | learning rate: 2.498043E-05 | global batch size:    96 | action loss: 2.586724E-01 | loss scale: 1.0 | grad norm: 0.556844 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:18][INFO] iteration       29/     100 | consumed samples:         2784 | elapsed time per iteration (ms): 972.8 | throughput (samples/sec/per_device): 12.336 | learning rate: 2.497819E-05 | global batch size:    96 | action loss: 2.651554E-01 | loss scale: 1.0 | grad norm: 0.632800 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:19][INFO] iteration       30/     100 | consumed samples:         2880 | elapsed time per iteration (ms): 972.7 | throughput (samples/sec/per_device): 12.337 | learning rate: 2.497584E-05 | global batch size:    96 | action loss: 2.960396E-01 | loss scale: 1.0 | grad norm: 0.653071 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:19][INFO] iteration       31/     100 | consumed samples:         2976 | elapsed time per iteration (ms): 976.1 | throughput (samples/sec/per_device): 12.294 | learning rate: 2.497336E-05 | global batch size:    96 | action loss: 2.606268E-01 | loss scale: 1.0 | grad norm: 0.563555 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:20][INFO] iteration       32/     100 | consumed samples:         3072 | elapsed time per iteration (ms): 974.0 | throughput (samples/sec/per_device): 12.321 | learning rate: 2.497077E-05 | global batch size:    96 | action loss: 2.364195E-01 | loss scale: 1.0 | grad norm: 0.526883 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:21][INFO] iteration       33/     100 | consumed samples:         3168 | elapsed time per iteration (ms): 973.1 | throughput (samples/sec/per_device): 12.332 | learning rate: 2.496805E-05 | global batch size:    96 | action loss: 2.672432E-01 | loss scale: 1.0 | grad norm: 0.766824 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:22][INFO] iteration       34/     100 | consumed samples:         3264 | elapsed time per iteration (ms): 973.8 | throughput (samples/sec/per_device): 12.323 | learning rate: 2.496521E-05 | global batch size:    96 | action loss: 2.852440E-01 | loss scale: 1.0 | grad norm: 0.599977 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:23][INFO] iteration       35/     100 | consumed samples:         3360 | elapsed time per iteration (ms): 974.7 | throughput (samples/sec/per_device): 12.311 | learning rate: 2.496226E-05 | global batch size:    96 | action loss: 2.614910E-01 | loss scale: 1.0 | grad norm: 0.479923 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:24][INFO] iteration       36/     100 | consumed samples:         3456 | elapsed time per iteration (ms): 974.2 | throughput (samples/sec/per_device): 12.318 | learning rate: 2.495918E-05 | global batch size:    96 | action loss: 2.410024E-01 | loss scale: 1.0 | grad norm: 0.489882 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:25][INFO] iteration       37/     100 | consumed samples:         3552 | elapsed time per iteration (ms): 979.5 | throughput (samples/sec/per_device): 12.251 | learning rate: 2.495598E-05 | global batch size:    96 | action loss: 2.879855E-01 | loss scale: 1.0 | grad norm: 0.873577 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:26][INFO] iteration       38/     100 | consumed samples:         3648 | elapsed time per iteration (ms): 974.7 | throughput (samples/sec/per_device): 12.311 | learning rate: 2.495266E-05 | global batch size:    96 | action loss: 2.840620E-01 | loss scale: 1.0 | grad norm: 0.744612 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:27][INFO] iteration       39/     100 | consumed samples:         3744 | elapsed time per iteration (ms): 977.2 | throughput (samples/sec/per_device): 12.279 | learning rate: 2.494922E-05 | global batch size:    96 | action loss: 2.602108E-01 | loss scale: 1.0 | grad norm: 0.822901 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:28][INFO] iteration       40/     100 | consumed samples:         3840 | elapsed time per iteration (ms): 984.3 | throughput (samples/sec/per_device): 12.191 | learning rate: 2.494566E-05 | global batch size:    96 | action loss: 2.971511E-01 | loss scale: 1.0 | grad norm: 0.761551 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:28][INFO] max time across ranks (ms):
+    forward-backward................................: 852.33
+    forward-compute.................................: 277.57
+    backward-compute................................: 573.25
+    batch-generator.................................: 1.73
+    nan-grad-cleanup................................: 14.43
+    grad-clip.......................................: 32.55
+    optimizer.......................................: 83.96
+    optimizer-inner-step............................: 83.86
+    optimizer-scheduler-step........................: 0.04
+    optimizer-zero-grad.............................: 0.79
+[2026-08-21 15:42:29][INFO] iteration       41/     100 | consumed samples:         3936 | elapsed time per iteration (ms): 974.9 | throughput (samples/sec/per_device): 12.308 | learning rate: 2.494198E-05 | global batch size:    96 | action loss: 2.628141E-01 | loss scale: 1.0 | grad norm: 0.732413 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:30][INFO] iteration       42/     100 | consumed samples:         4032 | elapsed time per iteration (ms): 974.1 | throughput (samples/sec/per_device): 12.319 | learning rate: 2.493818E-05 | global batch size:    96 | action loss: 2.651889E-01 | loss scale: 1.0 | grad norm: 0.647469 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:31][INFO] iteration       43/     100 | consumed samples:         4128 | elapsed time per iteration (ms): 974.8 | throughput (samples/sec/per_device): 12.310 | learning rate: 2.493426E-05 | global batch size:    96 | action loss: 3.399175E-01 | loss scale: 1.0 | grad norm: 0.728783 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:32][INFO] iteration       44/     100 | consumed samples:         4224 | elapsed time per iteration (ms): 976.2 | throughput (samples/sec/per_device): 12.292 | learning rate: 2.493022E-05 | global batch size:    96 | action loss: 2.783091E-01 | loss scale: 1.0 | grad norm: 0.687611 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:33][INFO] iteration       45/     100 | consumed samples:         4320 | elapsed time per iteration (ms): 974.9 | throughput (samples/sec/per_device): 12.309 | learning rate: 2.492606E-05 | global batch size:    96 | action loss: 2.137870E-01 | loss scale: 1.0 | grad norm: 0.463745 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:34][INFO] iteration       46/     100 | consumed samples:         4416 | elapsed time per iteration (ms): 976.8 | throughput (samples/sec/per_device): 12.285 | learning rate: 2.492178E-05 | global batch size:    96 | action loss: 2.384180E-01 | loss scale: 1.0 | grad norm: 0.541693 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:35][INFO] iteration       47/     100 | consumed samples:         4512 | elapsed time per iteration (ms): 976.9 | throughput (samples/sec/per_device): 12.284 | learning rate: 2.491738E-05 | global batch size:    96 | action loss: 2.565634E-01 | loss scale: 1.0 | grad norm: 0.663109 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:36][INFO] iteration       48/     100 | consumed samples:         4608 | elapsed time per iteration (ms): 975.5 | throughput (samples/sec/per_device): 12.302 | learning rate: 2.491286E-05 | global batch size:    96 | action loss: 2.814559E-01 | loss scale: 1.0 | grad norm: 0.670898 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:37][INFO] iteration       49/     100 | consumed samples:         4704 | elapsed time per iteration (ms): 975.7 | throughput (samples/sec/per_device): 12.299 | learning rate: 2.490822E-05 | global batch size:    96 | action loss: 2.317208E-01 | loss scale: 1.0 | grad norm: 0.566580 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:38][INFO] iteration       50/     100 | consumed samples:         4800 | elapsed time per iteration (ms): 975.6 | throughput (samples/sec/per_device): 12.300 | learning rate: 2.490346E-05 | global batch size:    96 | action loss: 2.633367E-01 | loss scale: 1.0 | grad norm: 0.624046 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:39][INFO] iteration       51/     100 | consumed samples:         4896 | elapsed time per iteration (ms): 978.7 | throughput (samples/sec/per_device): 12.261 | learning rate: 2.489858E-05 | global batch size:    96 | action loss: 2.147979E-01 | loss scale: 1.0 | grad norm: 0.466588 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:40][INFO] iteration       52/     100 | consumed samples:         4992 | elapsed time per iteration (ms): 976.2 | throughput (samples/sec/per_device): 12.292 | learning rate: 2.489358E-05 | global batch size:    96 | action loss: 2.296934E-01 | loss scale: 1.0 | grad norm: 0.704545 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:41][INFO] iteration       53/     100 | consumed samples:         5088 | elapsed time per iteration (ms): 976.6 | throughput (samples/sec/per_device): 12.288 | learning rate: 2.488846E-05 | global batch size:    96 | action loss: 2.719660E-01 | loss scale: 1.0 | grad norm: 0.893273 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:42][INFO] iteration       54/     100 | consumed samples:         5184 | elapsed time per iteration (ms): 977.2 | throughput (samples/sec/per_device): 12.280 | learning rate: 2.488322E-05 | global batch size:    96 | action loss: 2.482795E-01 | loss scale: 1.0 | grad norm: 0.844504 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:43][INFO] iteration       55/     100 | consumed samples:         5280 | elapsed time per iteration (ms): 976.7 | throughput (samples/sec/per_device): 12.286 | learning rate: 2.487786E-05 | global batch size:    96 | action loss: 2.358364E-01 | loss scale: 1.0 | grad norm: 0.572576 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:44][INFO] iteration       56/     100 | consumed samples:         5376 | elapsed time per iteration (ms): 977.2 | throughput (samples/sec/per_device): 12.281 | learning rate: 2.487238E-05 | global batch size:    96 | action loss: 2.832903E-01 | loss scale: 1.0 | grad norm: 0.817346 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:45][INFO] iteration       57/     100 | consumed samples:         5472 | elapsed time per iteration (ms): 978.2 | throughput (samples/sec/per_device): 12.267 | learning rate: 2.486678E-05 | global batch size:    96 | action loss: 2.358655E-01 | loss scale: 1.0 | grad norm: 0.456494 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:46][INFO] iteration       58/     100 | consumed samples:         5568 | elapsed time per iteration (ms): 977.3 | throughput (samples/sec/per_device): 12.279 | learning rate: 2.486106E-05 | global batch size:    96 | action loss: 2.156160E-01 | loss scale: 1.0 | grad norm: 0.582703 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:47][INFO] iteration       59/     100 | consumed samples:         5664 | elapsed time per iteration (ms): 979.0 | throughput (samples/sec/per_device): 12.257 | learning rate: 2.485522E-05 | global batch size:    96 | action loss: 2.470129E-01 | loss scale: 1.0 | grad norm: 0.889447 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:48][INFO] iteration       60/     100 | consumed samples:         5760 | elapsed time per iteration (ms): 985.8 | throughput (samples/sec/per_device): 12.172 | learning rate: 2.484927E-05 | global batch size:    96 | action loss: 2.199176E-01 | loss scale: 1.0 | grad norm: 0.534570 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:48][INFO] max time across ranks (ms):
+    forward-backward................................: 853.89
+    forward-compute.................................: 277.51
+    backward-compute................................: 575.24
+    batch-generator.................................: 1.56
+    nan-grad-cleanup................................: 13.02
+    grad-clip.......................................: 32.61
+    optimizer.......................................: 84.56
+    optimizer-inner-step............................: 84.47
+    optimizer-scheduler-step........................: 0.05
+    optimizer-zero-grad.............................: 0.76
+[2026-08-21 15:42:49][INFO] iteration       61/     100 | consumed samples:         5856 | elapsed time per iteration (ms): 979.5 | throughput (samples/sec/per_device): 12.251 | learning rate: 2.484319E-05 | global batch size:    96 | action loss: 2.525542E-01 | loss scale: 1.0 | grad norm: 1.022053 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:50][INFO] iteration       62/     100 | consumed samples:         5952 | elapsed time per iteration (ms): 977.3 | throughput (samples/sec/per_device): 12.278 | learning rate: 2.483699E-05 | global batch size:    96 | action loss: 2.353165E-01 | loss scale: 1.0 | grad norm: 0.607951 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:51][INFO] iteration       63/     100 | consumed samples:         6048 | elapsed time per iteration (ms): 976.7 | throughput (samples/sec/per_device): 12.286 | learning rate: 2.483068E-05 | global batch size:    96 | action loss: 2.329742E-01 | loss scale: 1.0 | grad norm: 0.560446 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:52][INFO] iteration       64/     100 | consumed samples:         6144 | elapsed time per iteration (ms): 977.4 | throughput (samples/sec/per_device): 12.277 | learning rate: 2.482425E-05 | global batch size:    96 | action loss: 2.237319E-01 | loss scale: 1.0 | grad norm: 0.587107 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:53][INFO] iteration       65/     100 | consumed samples:         6240 | elapsed time per iteration (ms): 976.5 | throughput (samples/sec/per_device): 12.288 | learning rate: 2.481769E-05 | global batch size:    96 | action loss: 2.113199E-01 | loss scale: 1.0 | grad norm: 0.499920 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:54][INFO] iteration       66/     100 | consumed samples:         6336 | elapsed time per iteration (ms): 979.8 | throughput (samples/sec/per_device): 12.248 | learning rate: 2.481102E-05 | global batch size:    96 | action loss: 1.954901E-01 | loss scale: 1.0 | grad norm: 0.528306 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:55][INFO] iteration       67/     100 | consumed samples:         6432 | elapsed time per iteration (ms): 977.3 | throughput (samples/sec/per_device): 12.279 | learning rate: 2.480423E-05 | global batch size:    96 | action loss: 2.335524E-01 | loss scale: 1.0 | grad norm: 0.684414 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:56][INFO] iteration       68/     100 | consumed samples:         6528 | elapsed time per iteration (ms): 976.8 | throughput (samples/sec/per_device): 12.285 | learning rate: 2.479732E-05 | global batch size:    96 | action loss: 2.051593E-01 | loss scale: 1.0 | grad norm: 0.516972 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:57][INFO] iteration       69/     100 | consumed samples:         6624 | elapsed time per iteration (ms): 978.3 | throughput (samples/sec/per_device): 12.266 | learning rate: 2.479029E-05 | global batch size:    96 | action loss: 2.138169E-01 | loss scale: 1.0 | grad norm: 0.470626 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:58][INFO] iteration       70/     100 | consumed samples:         6720 | elapsed time per iteration (ms): 977.2 | throughput (samples/sec/per_device): 12.280 | learning rate: 2.478314E-05 | global batch size:    96 | action loss: 2.458335E-01 | loss scale: 1.0 | grad norm: 0.616704 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:42:59][INFO] iteration       71/     100 | consumed samples:         6816 | elapsed time per iteration (ms): 978.1 | throughput (samples/sec/per_device): 12.269 | learning rate: 2.477588E-05 | global batch size:    96 | action loss: 2.155306E-01 | loss scale: 1.0 | grad norm: 0.677732 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:00][INFO] iteration       72/     100 | consumed samples:         6912 | elapsed time per iteration (ms): 978.5 | throughput (samples/sec/per_device): 12.264 | learning rate: 2.476849E-05 | global batch size:    96 | action loss: 2.412298E-01 | loss scale: 1.0 | grad norm: 0.719653 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:01][INFO] iteration       73/     100 | consumed samples:         7008 | elapsed time per iteration (ms): 977.0 | throughput (samples/sec/per_device): 12.283 | learning rate: 2.476099E-05 | global batch size:    96 | action loss: 2.192442E-01 | loss scale: 1.0 | grad norm: 0.635797 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:02][INFO] iteration       74/     100 | consumed samples:         7104 | elapsed time per iteration (ms): 976.3 | throughput (samples/sec/per_device): 12.291 | learning rate: 2.475337E-05 | global batch size:    96 | action loss: 2.216760E-01 | loss scale: 1.0 | grad norm: 0.511750 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:03][INFO] iteration       75/     100 | consumed samples:         7200 | elapsed time per iteration (ms): 976.8 | throughput (samples/sec/per_device): 12.285 | learning rate: 2.474563E-05 | global batch size:    96 | action loss: 2.310003E-01 | loss scale: 1.0 | grad norm: 0.465991 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:04][INFO] iteration       76/     100 | consumed samples:         7296 | elapsed time per iteration (ms): 977.9 | throughput (samples/sec/per_device): 12.271 | learning rate: 2.473777E-05 | global batch size:    96 | action loss: 2.055384E-01 | loss scale: 1.0 | grad norm: 0.549841 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:04][INFO] iteration       77/     100 | consumed samples:         7392 | elapsed time per iteration (ms): 979.8 | throughput (samples/sec/per_device): 12.247 | learning rate: 2.472979E-05 | global batch size:    96 | action loss: 2.175564E-01 | loss scale: 1.0 | grad norm: 0.475897 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:05][INFO] iteration       78/     100 | consumed samples:         7488 | elapsed time per iteration (ms): 977.3 | throughput (samples/sec/per_device): 12.279 | learning rate: 2.472170E-05 | global batch size:    96 | action loss: 2.090923E-01 | loss scale: 1.0 | grad norm: 0.498750 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:06][INFO] iteration       79/     100 | consumed samples:         7584 | elapsed time per iteration (ms): 976.5 | throughput (samples/sec/per_device): 12.289 | learning rate: 2.471349E-05 | global batch size:    96 | action loss: 2.133066E-01 | loss scale: 1.0 | grad norm: 0.588417 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:07][INFO] iteration       80/     100 | consumed samples:         7680 | elapsed time per iteration (ms): 987.0 | throughput (samples/sec/per_device): 12.158 | learning rate: 2.470516E-05 | global batch size:    96 | action loss: 1.964634E-01 | loss scale: 1.0 | grad norm: 0.481720 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:07][INFO] max time across ranks (ms):
+    forward-backward................................: 856.51
+    forward-compute.................................: 278.33
+    backward-compute................................: 578.24
+    batch-generator.................................: 1.60
+    nan-grad-cleanup................................: 12.96
+    grad-clip.......................................: 32.84
+    optimizer.......................................: 82.63
+    optimizer-inner-step............................: 82.52
+    optimizer-scheduler-step........................: 0.07
+    optimizer-zero-grad.............................: 0.74
+[2026-08-21 15:43:08][INFO] iteration       81/     100 | consumed samples:         7776 | elapsed time per iteration (ms): 976.2 | throughput (samples/sec/per_device): 12.293 | learning rate: 2.469671E-05 | global batch size:    96 | action loss: 1.968841E-01 | loss scale: 1.0 | grad norm: 0.435546 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:09][INFO] iteration       82/     100 | consumed samples:         7872 | elapsed time per iteration (ms): 976.4 | throughput (samples/sec/per_device): 12.290 | learning rate: 2.468814E-05 | global batch size:    96 | action loss: 2.061963E-01 | loss scale: 1.0 | grad norm: 0.618341 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:10][INFO] iteration       83/     100 | consumed samples:         7968 | elapsed time per iteration (ms): 977.8 | throughput (samples/sec/per_device): 12.272 | learning rate: 2.467946E-05 | global batch size:    96 | action loss: 1.919384E-01 | loss scale: 1.0 | grad norm: 0.526283 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:11][INFO] iteration       84/     100 | consumed samples:         8064 | elapsed time per iteration (ms): 976.6 | throughput (samples/sec/per_device): 12.288 | learning rate: 2.467066E-05 | global batch size:    96 | action loss: 2.021052E-01 | loss scale: 1.0 | grad norm: 0.529469 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:12][INFO] iteration       85/     100 | consumed samples:         8160 | elapsed time per iteration (ms): 975.8 | throughput (samples/sec/per_device): 12.297 | learning rate: 2.466174E-05 | global batch size:    96 | action loss: 2.327663E-01 | loss scale: 1.0 | grad norm: 0.626505 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:13][INFO] iteration       86/     100 | consumed samples:         8256 | elapsed time per iteration (ms): 974.8 | throughput (samples/sec/per_device): 12.310 | learning rate: 2.465270E-05 | global batch size:    96 | action loss: 2.008384E-01 | loss scale: 1.0 | grad norm: 0.371586 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:14][INFO] iteration       87/     100 | consumed samples:         8352 | elapsed time per iteration (ms): 976.7 | throughput (samples/sec/per_device): 12.286 | learning rate: 2.464355E-05 | global batch size:    96 | action loss: 1.935217E-01 | loss scale: 1.0 | grad norm: 0.483040 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:15][INFO] iteration       88/     100 | consumed samples:         8448 | elapsed time per iteration (ms): 975.4 | throughput (samples/sec/per_device): 12.302 | learning rate: 2.463428E-05 | global batch size:    96 | action loss: 2.066978E-01 | loss scale: 1.0 | grad norm: 0.512398 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:16][INFO] iteration       89/     100 | consumed samples:         8544 | elapsed time per iteration (ms): 977.3 | throughput (samples/sec/per_device): 12.279 | learning rate: 2.462489E-05 | global batch size:    96 | action loss: 2.305335E-01 | loss scale: 1.0 | grad norm: 0.600744 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:17][INFO] iteration       90/     100 | consumed samples:         8640 | elapsed time per iteration (ms): 974.7 | throughput (samples/sec/per_device): 12.311 | learning rate: 2.461538E-05 | global batch size:    96 | action loss: 2.255722E-01 | loss scale: 1.0 | grad norm: 0.692795 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:18][INFO] iteration       91/     100 | consumed samples:         8736 | elapsed time per iteration (ms): 973.5 | throughput (samples/sec/per_device): 12.326 | learning rate: 2.460576E-05 | global batch size:    96 | action loss: 2.052471E-01 | loss scale: 1.0 | grad norm: 0.651370 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:19][INFO] iteration       92/     100 | consumed samples:         8832 | elapsed time per iteration (ms): 974.9 | throughput (samples/sec/per_device): 12.309 | learning rate: 2.459602E-05 | global batch size:    96 | action loss: 2.083964E-01 | loss scale: 1.0 | grad norm: 0.589097 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:20][INFO] iteration       93/     100 | consumed samples:         8928 | elapsed time per iteration (ms): 980.3 | throughput (samples/sec/per_device): 12.241 | learning rate: 2.458617E-05 | global batch size:    96 | action loss: 2.379844E-01 | loss scale: 1.0 | grad norm: 0.856393 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:21][INFO] iteration       94/     100 | consumed samples:         9024 | elapsed time per iteration (ms): 975.6 | throughput (samples/sec/per_device): 12.300 | learning rate: 2.457619E-05 | global batch size:    96 | action loss: 1.915379E-01 | loss scale: 1.0 | grad norm: 0.532055 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:22][INFO] iteration       95/     100 | consumed samples:         9120 | elapsed time per iteration (ms): 974.4 | throughput (samples/sec/per_device): 12.316 | learning rate: 2.456611E-05 | global batch size:    96 | action loss: 1.992690E-01 | loss scale: 1.0 | grad norm: 0.440369 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:23][INFO] iteration       96/     100 | consumed samples:         9216 | elapsed time per iteration (ms): 975.2 | throughput (samples/sec/per_device): 12.305 | learning rate: 2.455590E-05 | global batch size:    96 | action loss: 2.180836E-01 | loss scale: 1.0 | grad norm: 0.531565 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:24][INFO] iteration       97/     100 | consumed samples:         9312 | elapsed time per iteration (ms): 974.2 | throughput (samples/sec/per_device): 12.317 | learning rate: 2.454558E-05 | global batch size:    96 | action loss: 2.125322E-01 | loss scale: 1.0 | grad norm: 0.613064 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:25][INFO] iteration       98/     100 | consumed samples:         9408 | elapsed time per iteration (ms): 974.7 | throughput (samples/sec/per_device): 12.311 | learning rate: 2.453514E-05 | global batch size:    96 | action loss: 1.987589E-01 | loss scale: 1.0 | grad norm: 0.622951 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:26][INFO] iteration       99/     100 | consumed samples:         9504 | elapsed time per iteration (ms): 974.8 | throughput (samples/sec/per_device): 12.311 | learning rate: 2.452459E-05 | global batch size:    96 | action loss: 1.932330E-01 | loss scale: 1.0 | grad norm: 0.588522 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:27][INFO] iteration      100/     100 | consumed samples:         9600 | elapsed time per iteration (ms): 985.5 | throughput (samples/sec/per_device): 12.177 | learning rate: 2.451392E-05 | global batch size:    96 | action loss: 2.029619E-01 | loss scale: 1.0 | grad norm: 0.494848 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-21 15:43:27][INFO] max time across ranks (ms):
+    forward-backward................................: 853.34
+    forward-compute.................................: 279.60
+    backward-compute................................: 575.52
+    batch-generator.................................: 1.70
+    nan-grad-cleanup................................: 12.75
+    grad-clip.......................................: 34.13
+    optimizer.......................................: 83.57
+    optimizer-inner-step............................: 83.47
+    optimizer-scheduler-step........................: 0.05
+    optimizer-zero-grad.............................: 1.01
+[2026-08-21 15:43:37][INFO] Checkpoint saved (dcp): /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/warmup_0_100/checkpoints/steps_100

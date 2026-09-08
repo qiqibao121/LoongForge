@@ -1,0 +1,33 @@
+{
+  "experiment": "pi05_v_short_dual_v",
+  "root": "/raid0/fastwam/experiments/pi05_v_short_dual_v",
+  "status": "completed",
+  "window": "steps_301_330",
+  "effective_compressed_gradient_and_error_feedback": "shared",
+  "diagnostic": "one_step_counterfactual_v_denominator; training trajectory unchanged",
+  "num_unique_steps": 29,
+  "relative_update_delta": {
+    "first_step_302": 0.002545303918352377,
+    "mean": 0.0638467805364037,
+    "median": 0.05758996961093243,
+    "max": 0.17715970886793048,
+    "last_step_330": 0.037288091763967704
+  },
+  "action_loss": {
+    "step301": 0.16373136639595032,
+    "step330": 0.18381249904632568,
+    "mean_301_330": 0.1805626258254051,
+    "min_301_330": 0.1474975049495697,
+    "max_301_330": 0.23702214658260345
+  },
+  "errors": {
+    "nan": false,
+    "oom": false,
+    "nccl": false,
+    "initial_unbounded_diagnostic_oom_at_step": 302
+  },
+  "notes": [
+    "The diagnostic aggregates representative tensors capped at 2,000,000 elements to avoid adding large temporary buffers to PowerSGD workspaces.",
+    "Eight-rank duplicate diagnostic lines were deduplicated by step for summary."
+  ]
+}

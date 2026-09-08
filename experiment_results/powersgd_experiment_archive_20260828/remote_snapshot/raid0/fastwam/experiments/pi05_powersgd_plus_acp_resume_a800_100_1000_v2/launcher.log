@@ -1,0 +1,25 @@
+[2026-08-21 15:38:33] building shared baseline checkpoint 0 -> 100
+[2026-08-21 15:44:19] starting baseline attempt 1
+[2026-08-21 16:02:32] completed baseline attempt 1
+[2026-08-21 16:03:03] starting powersgd_plus attempt 1
+[2026-08-21 16:57:17] completed powersgd_plus attempt 1
+[2026-08-21 16:57:47] starting acp_powersgd_plus attempt 1
+[2026-08-21 17:47:05] completed acp_powersgd_plus attempt 1
+wrote /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/selected/comparison_summary.json
+wrote /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/selected/comparison_summary.csv
+wrote /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/selected/comparison.png
+baseline           loss_abs=0 loss_rel=0.000% step_time=0.9754s throughput_delta=+0.00%
+powersgd_plus      loss_abs=0.00744364 loss_rel=4.632% step_time=3.4307s throughput_delta=-68.79%
+acp_powersgd_plus  loss_abs=0.0104637 loss_rel=6.497% step_time=3.1031s throughput_delta=-65.41%
+wrote /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/selected/comparison_summary.json
+wrote /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/selected/comparison_summary.csv
+wrote /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/selected/comparison.png
+baseline           loss_abs=0 loss_rel=0.000% step_time=0.9754s throughput_delta=+0.00%
+powersgd_plus      loss_abs=0.00763016 loss_rel=4.748% step_time=3.4307s throughput_delta=-68.79%
+acp_powersgd_plus  loss_abs=0.0107259 loss_rel=6.659% step_time=3.1031s throughput_delta=-65.41%
+wrote /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/selected/comparison_summary.json
+wrote /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/selected/comparison_summary.csv
+wrote /raid0/fastwam/experiments/pi05_powersgd_plus_acp_resume_a800_100_1000_v2/selected/comparison.png
+baseline           loss_abs=0 loss_rel=0.000% step_time=0.9754s throughput_delta=+0.00%
+powersgd_plus      loss_abs=0.00744364 loss_rel=4.632% step_time=3.4307s throughput_delta=-68.79%
+acp_powersgd_plus  loss_abs=0.0104637 loss_rel=6.497% step_time=3.1031s throughput_delta=-65.41%

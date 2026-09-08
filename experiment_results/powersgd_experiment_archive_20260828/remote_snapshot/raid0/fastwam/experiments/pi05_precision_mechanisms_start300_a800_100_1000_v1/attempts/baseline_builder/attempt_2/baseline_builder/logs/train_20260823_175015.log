@@ -1,0 +1,276 @@
+[2026-08-23 17:50:15][INFO] 
+------------------------ training training_args ------------------------
+  activation_checkpoint_module_patterns ........... None
+  activation_checkpoint_skip_modules .............. None
+  adam_beta1 ...................................... 0.9
+  adam_beta2 ...................................... 0.95
+  adam_eps ........................................ 1e-08
+  async_save ...................................... False
+  batch_drop_last ................................. True
+  check_for_nan_in_loss_and_grad .................. True
+  clip_grad ....................................... 1.0
+  config_file ..................................... None
+  cuda_graph_ddp_sync_in_graph .................... False
+  cuda_graph_grad_sync_bucket_mb .................. 200.0
+  cuda_graph_grad_sync_dtype ...................... fp32
+  cuda_graph_grad_sync_impl ....................... coalesced
+  cuda_graph_impl ................................. none
+  cuda_graph_pad_length ........................... None
+  cuda_graph_scope ................................ full_iteration
+  cuda_graph_warmup_steps ......................... 3
+  cudnn_benchmark ................................. False
+  data_root_dir ................................... None
+  dataloader_multiprocessing_context .............. None
+  dataloader_seed_workers ......................... False
+  dataset_format .................................. lerobot_datasets
+  dataset_path .................................... /raid0/fastwam/vla_artifacts/pi05/datasets/libero
+  dataset_strategy ................................ default
+  ddp_accordion_detection_window .................. 50
+  ddp_accordion_protection_steps .................. 25
+  ddp_accordion_relative_change_threshold ......... 0.5
+  ddp_batched_grad_copy ........................... False
+  ddp_broadcast_buffers ........................... True
+  ddp_bucket_cap_mb ............................... None
+  ddp_bucket_cap_mb_list .......................... None
+  ddp_comm_hook ................................... None
+  ddp_comm_hook_logging ........................... False
+  ddp_dynamic_powersgd_adapt_interval ............. 5
+  ddp_dynamic_powersgd_high_rank .................. 4
+  ddp_dynamic_powersgd_low_rank ................... 1
+  ddp_dynamic_powersgd_relative_change_threshold .. 0.1
+  ddp_ef21_powersgd_log_interval .................. 25
+  ddp_find_unused_parameters ...................... True
+  ddp_gradient_as_bucket_view ..................... True
+  ddp_init_sync ................................... True
+  ddp_layerwise_powersgd_candidate_ranks .......... 1,2,4,8,16
+  ddp_layerwise_powersgd_log_tensor_stats ......... False
+  ddp_layerwise_powersgd_power_iterations ......... 2
+  ddp_layerwise_powersgd_refresh_period ........... 50
+  ddp_layerwise_powersgd_relative_error ........... 0.1
+  ddp_layerwise_powersgd_uncompressed_patterns .... 
+  ddp_oracle_error_budget_random_seed ............. 0
+  ddp_powersgd_global_step_offset ................. 0
+  ddp_powersgd_lr_high_rank ....................... 2
+  ddp_powersgd_lr_high_rank_end_step .............. 452
+  ddp_powersgd_matrix_approximation_rank .......... 1
+  ddp_powersgd_min_compression_rate ............... 2.0
+  ddp_powersgd_period_schedule .................... 300-452:25,453-734:50,735-1000:100
+  ddp_powersgd_plus_restart_method ................ approximate
+  ddp_powersgd_plus_restart_period ................ 50
+  ddp_powersgd_scheduled_start_step ............... 300
+  ddp_powersgd_start_iter ......................... 1000
+  ddp_powersgd_window_ranges ...................... 
+  ddp_separate_compression_ratio .................. 16.0
+  ddp_separate_error_feedback_beta ................ 0.95
+  ddp_separate_error_reset_interval ............... 128
+  ddp_skip_all_reduce_unused_params ............... False
+  ddp_static_graph ................................ True
+  detail_log_interval ............................. 20
+  deterministic_mode .............................. False
+  disable_tf32 .................................... False
+  distributed_sampler_mode ........................ cyclic
+  distributed_strategy ............................ ddp
+  dtype ........................................... bfloat16
+  dynamo_optimize_ddp ............................. False
+  freeze_modules .................................. 
+  fsdp_backward_prefetch_distance ................. 0
+  fsdp_cast_forward_inputs ........................ True
+  fsdp_forward_prefetch_distance .................. 0
+  fsdp_leftover_min_num_params .................... 1000000
+  fsdp_min_num_params ............................. 1000000
+  fsdp_no_wrap_modules ............................ None
+  fsdp_original_param_dtype ....................... None
+  fsdp_reduce_dtype ............................... fp32
+  fsdp_reshard_default ............................ None
+  fsdp_reshard_module_overrides ................... None
+  fsdp_reshard_root ............................... False
+  fsdp_unsharded_param_dtype ...................... None
+  fsdp_wrap_modules ............................... None
+  gradient_accumulation_steps ..................... 1
+  hsdp_shard_size ................................. None
+  init_on_meta .................................... False
+  lambda_cycle_length ............................. 10000
+  lambda_f_max .................................... 0.4
+  lambda_f_min .................................... 0.0
+  lambda_f_start .................................. 0.0
+  lerobotdataset_version .......................... v3.0
+  log_interval .................................... 1
+  lora_alpha ...................................... 32
+  lora_bias ....................................... none
+  lora_dropout .................................... 0.0
+  lora_init ....................................... true
+  lora_modules_to_save ............................ None
+  lora_r .......................................... 16
+  lora_target_modules ............................. None
+  loss_log_rank ................................... [-1]
+  loss_spike_threshold ............................ 100.0
+  lr_base ......................................... 2.5e-05
+  lr_decay_iters .................................. 1000
+  lr_decay_style .................................. cosine_with_min_lr
+  lr_end .......................................... 1e-07
+  lr_group ........................................ None
+  lr_warmup_iters ................................. 10
+  manual_gc ....................................... False
+  manual_gc_interval .............................. 0
+  min_lr .......................................... 1e-06
+  model_name ...................................... pi05
+  num_cycles ...................................... 1.0
+  num_samples ..................................... 100
+  num_workers ..................................... 4
+  optimizer ....................................... AdamW
+  optimizer_state_log_interval .................... 25
+  output_dir ...................................... /raid0/fastwam/experiments/pi05_precision_mechanisms_start300_a800_100_1000_v1/attempts/baseline_builder/attempt_2/baseline_builder
+  per_device_batch_size ........................... 12
+  polynomial_power ................................ 1.0
+  pretrained_checkpoint ........................... /raid0/fastwam/vla_artifacts/pi05/models/pi05_base
+  profile_output_dir .............................. None
+  profile_ranks ................................... [0]
+  profile_step_end ................................ 12
+  profile_step_start .............................. 10
+  resume .......................................... True
+  robot_type ...................................... libero_franka
+  sampler_shuffle ................................. True
+  save_format ..................................... dcp
+  save_interval ................................... 0
+  save_lr_thresholds .............................. 
+  save_steps ...................................... 300
+  save_training_state ............................. True
+  seed ............................................ 42
+  set_seed_by_rank ................................ False
+  split ........................................... train
+  streaming ....................................... False
+  task_name ....................................... perform the task
+  tensorboard_dir ................................. /raid0/fastwam/experiments/pi05_precision_mechanisms_start300_a800_100_1000_v1/attempts/baseline_builder/attempt_2/baseline_builder/tensorboard
+  tensorboard_queue_size .......................... 1000
+  timing_log_level ................................ 0
+  tokenizer_path .................................. /raid0/fastwam/vla_artifacts/pi05/tokenizers/paligemma-3b-pt-224
+  train_iters ..................................... 1000
+  trainer_type .................................... FinetuneTrainer
+  use_lora ........................................ False
+  use_nsys_profiler ............................... False
+  use_pytorch_profiler ............................ False
+  video_backend ................................... torchcodec
+  wandb_mode ...................................... disabled
+  wandb_project ................................... loongforge-vla
+  weight_decay .................................... 0.01
+  weight_decay_grouping ........................... all
+  zero_master_param_dtype ......................... none
+  zero_optimizer .................................. True
+  zero_parameters_as_bucket_view .................. True
+-------------------- end of training training_args ---------------------
+[2026-08-23 17:50:15][INFO] 
+------------------------ model config ------------------------
+  action_dim ...................................... 7
+  action_horizon .................................. 50
+  compile_dynamic ................................. False
+  compile_fullgraph ............................... True
+  compile_mode .................................... max-autotune
+  compile_model ................................... False
+  compile_scope ................................... multi_group
+  freeze_vision_encoder ........................... False
+  gradient_checkpointing .......................... False
+  max_action_dim .................................. 32
+  max_state_dim ................................... 32
+  model_type ...................................... pi05
+  state_dim ....................................... 7
+  train_expert_only ............................... False
+-------------------- end of model config ---------------------
+[2026-08-23 17:50:15][INFO] 
+------------------------ data config ------------------------
+  action_apply_to ................................. ['action']
+  action_padding_strategy ......................... zero
+  action_transform_horizon ........................ None
+  action_transform_max_action_dim ................. None
+  action_use_statistics ........................... True
+  image_mask ...................................... None
+  image_normalize_mode ............................ identity
+  image_resize_strategy ........................... resize_with_pad
+  image_size ...................................... 224
+  max_token_len ................................... 200
+  normalization_mode .............................. q99
+  num_images ...................................... 2
+  observation_delta_indices ....................... None
+  use_action_transform ............................ True
+  use_image_transform ............................. True
+-------------------- end of data config ---------------------
+[2026-08-23 17:50:15][INFO] TensorBoard enabled: /raid0/fastwam/experiments/pi05_precision_mechanisms_start300_a800_100_1000_v1/attempts/baseline_builder/attempt_2/baseline_builder/tensorboard
+[2026-08-23 17:50:15][INFO] [model] start building model: model_type=pi05, class=Pi05ModelConfig
+[2026-08-23 17:52:35][INFO] [model] model built in 140.70s
+[2026-08-23 17:52:35][INFO] [ckpt] resume requested: dir==/raid0/fastwam/experiments/pi05_precision_mechanisms_start300_a800_100_1000_v1/attempts/baseline_builder/attempt_2/baseline_builder/checkpoints/steps_100
+[2026-08-23 17:52:35][INFO] resume: detected DCP checkpoint at /raid0/fastwam/experiments/pi05_precision_mechanisms_start300_a800_100_1000_v1/attempts/baseline_builder/attempt_2/baseline_builder/checkpoints/steps_100 — deferring weight load until after wrap_model.
+[2026-08-23 17:52:35][INFO] Resumed model weights from step 100
+[2026-08-23 17:52:35][INFO] [ckpt] resume done in 0.00s
+[2026-08-23 17:52:35][INFO] [wrap_model] wrap_model: strategy=ddp, dtype=bfloat16
+[2026-08-23 17:52:39][INFO] [wrap_model] done in 3.28s
+[2026-08-23 17:52:39][INFO] [optimizer] building optimizer
+[2026-08-23 17:52:39][INFO] [LR Groups] Model modules (use paths below with --lr-group to set per-module LR):
+  model                                                         (4143.4M trainable params)
+    model.paligemma_with_expert                                   (4141.2M trainable params)
+      model.paligemma_with_expert.paligemma                         (3450.0M trainable params)
+      model.paligemma_with_expert.gemma_expert                      (691.3M trainable params)
+    model.action_in_proj                                          (33.8K trainable params)
+    model.action_out_proj                                         (32.8K trainable params)
+    model.time_mlp_in                                             (1.0M trainable params)
+    model.time_mlp_out                                            (1.0M trainable params)
+[2026-08-23 17:52:39][INFO] [LR Groups] Model modules with LR assignment:
+  model                                                         (4143.4M trainable params)  lr=2.50e-05
+    model.paligemma_with_expert                                   (4141.2M trainable params)  lr=2.50e-05
+      model.paligemma_with_expert.paligemma                         (3450.0M trainable params)  lr=2.50e-05
+      model.paligemma_with_expert.gemma_expert                      (691.3M trainable params)  lr=2.50e-05
+    model.action_in_proj                                          (33.8K trainable params)  lr=2.50e-05
+    model.action_out_proj                                         (32.8K trainable params)  lr=2.50e-05
+    model.time_mlp_in                                             (1.0M trainable params)  lr=2.50e-05
+    model.time_mlp_out                                            (1.0M trainable params)  lr=2.50e-05
+[2026-08-23 17:52:39][INFO] Optimizer trainable parameter dtypes: torch.bfloat16: 255 tensors/3609853952 elems, torch.float32: 558 tensors/533550864 elems
+[2026-08-23 17:52:39][INFO] Mixed dtype params {torch.float32, torch.bfloat16}: using per-dtype ZeroRedundancyOptimizer
+[2026-08-23 17:52:39][INFO] [optimizer] optimizer built in 0.17s
+[2026-08-23 17:52:39][INFO] [ckpt] restoring optimizer/scheduler/RNG state from /raid0/fastwam/experiments/pi05_precision_mechanisms_start300_a800_100_1000_v1/attempts/baseline_builder/attempt_2/baseline_builder/checkpoints/steps_100
+[2026-08-23 17:52:48][INFO] model resumed via DCP (strict)
+[2026-08-23 17:52:50][INFO] optimizer resumed from rank-local ZeRO state
+[2026-08-23 17:52:50][INFO] scheduler resumed successfully
+[2026-08-23 17:52:50][INFO] [ckpt] optimizer/scheduler/RNG state restored in 11.41s
+[2026-08-23 17:52:50][INFO] [data] building dataloaders
+[2026-08-23 17:52:50][INFO] Using video codec: libsvtav1
+[2026-08-23 17:52:51][INFO] LeRobotV3Dataset: repo_id=libero, len=273465, action_horizon=50, fps=10.0, video_backend=torchcodec
+[2026-08-23 17:52:51][INFO] Using preprocessor: pi05
+[2026-08-23 17:52:51][INFO] Restored dataloader state: vla
+[2026-08-23 17:52:51][INFO] [data] done in 0.76s
+[2026-08-23 17:52:51][INFO] Parameters: 4143.4M total, 4143.4M trainable (100.0%)
+[2026-08-23 17:52:51][INFO] Model: PI05Policy
+[2026-08-23 17:53:06][INFO] RNG state resumed successfully after dataloader iterator init
+[2026-08-23 17:53:06][INFO] Dataloader 'vla' positioned at epoch=0
+[2026-08-23 17:53:13][INFO] iteration      101/    1000 | consumed samples:         9696 | elapsed time per iteration (ms): 7283.2 | throughput (samples/sec/per_device): 1.648 | learning rate: 2.450313E-05 | global batch size:    96 | action loss: 1.913847E-01 | loss scale: 1.0 | grad norm: 0.448261 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:14][INFO] iteration      102/    1000 | consumed samples:         9792 | elapsed time per iteration (ms): 967.4 | throughput (samples/sec/per_device): 12.405 | learning rate: 2.449223E-05 | global batch size:    96 | action loss: 1.999459E-01 | loss scale: 1.0 | grad norm: 0.455408 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:15][INFO] iteration      103/    1000 | consumed samples:         9888 | elapsed time per iteration (ms): 970.8 | throughput (samples/sec/per_device): 12.362 | learning rate: 2.448121E-05 | global batch size:    96 | action loss: 1.988113E-01 | loss scale: 1.0 | grad norm: 0.481722 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:16][INFO] iteration      104/    1000 | consumed samples:         9984 | elapsed time per iteration (ms): 967.5 | throughput (samples/sec/per_device): 12.403 | learning rate: 2.447008E-05 | global batch size:    96 | action loss: 1.837718E-01 | loss scale: 1.0 | grad norm: 0.593508 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:17][INFO] iteration      105/    1000 | consumed samples:        10080 | elapsed time per iteration (ms): 968.4 | throughput (samples/sec/per_device): 12.391 | learning rate: 2.445883E-05 | global batch size:    96 | action loss: 1.946732E-01 | loss scale: 1.0 | grad norm: 0.773145 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:18][INFO] iteration      106/    1000 | consumed samples:        10176 | elapsed time per iteration (ms): 970.0 | throughput (samples/sec/per_device): 12.371 | learning rate: 2.444746E-05 | global batch size:    96 | action loss: 2.031545E-01 | loss scale: 1.0 | grad norm: 0.487095 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:19][INFO] iteration      107/    1000 | consumed samples:        10272 | elapsed time per iteration (ms): 967.6 | throughput (samples/sec/per_device): 12.402 | learning rate: 2.443598E-05 | global batch size:    96 | action loss: 1.982350E-01 | loss scale: 1.0 | grad norm: 0.589103 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:20][INFO] iteration      108/    1000 | consumed samples:        10368 | elapsed time per iteration (ms): 966.4 | throughput (samples/sec/per_device): 12.417 | learning rate: 2.442439E-05 | global batch size:    96 | action loss: 1.872422E-01 | loss scale: 1.0 | grad norm: 0.466138 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:21][INFO] iteration      109/    1000 | consumed samples:        10464 | elapsed time per iteration (ms): 967.7 | throughput (samples/sec/per_device): 12.400 | learning rate: 2.441268E-05 | global batch size:    96 | action loss: 1.976818E-01 | loss scale: 1.0 | grad norm: 0.604724 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:22][INFO] iteration      110/    1000 | consumed samples:        10560 | elapsed time per iteration (ms): 968.6 | throughput (samples/sec/per_device): 12.389 | learning rate: 2.440085E-05 | global batch size:    96 | action loss: 2.159864E-01 | loss scale: 1.0 | grad norm: 0.723146 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:23][INFO] iteration      111/    1000 | consumed samples:        10656 | elapsed time per iteration (ms): 968.3 | throughput (samples/sec/per_device): 12.393 | learning rate: 2.438891E-05 | global batch size:    96 | action loss: 1.714398E-01 | loss scale: 1.0 | grad norm: 0.619195 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:24][INFO] iteration      112/    1000 | consumed samples:        10752 | elapsed time per iteration (ms): 969.0 | throughput (samples/sec/per_device): 12.384 | learning rate: 2.437686E-05 | global batch size:    96 | action loss: 1.822729E-01 | loss scale: 1.0 | grad norm: 1.058286 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:25][INFO] iteration      113/    1000 | consumed samples:        10848 | elapsed time per iteration (ms): 974.5 | throughput (samples/sec/per_device): 12.314 | learning rate: 2.436469E-05 | global batch size:    96 | action loss: 1.742899E-01 | loss scale: 1.0 | grad norm: 0.605742 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:26][INFO] iteration      114/    1000 | consumed samples:        10944 | elapsed time per iteration (ms): 968.1 | throughput (samples/sec/per_device): 12.396 | learning rate: 2.435241E-05 | global batch size:    96 | action loss: 2.191105E-01 | loss scale: 1.0 | grad norm: 0.571233 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:27][INFO] iteration      115/    1000 | consumed samples:        11040 | elapsed time per iteration (ms): 969.5 | throughput (samples/sec/per_device): 12.378 | learning rate: 2.434001E-05 | global batch size:    96 | action loss: 1.866189E-01 | loss scale: 1.0 | grad norm: 0.621457 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:28][INFO] iteration      116/    1000 | consumed samples:        11136 | elapsed time per iteration (ms): 970.1 | throughput (samples/sec/per_device): 12.370 | learning rate: 2.432750E-05 | global batch size:    96 | action loss: 1.857434E-01 | loss scale: 1.0 | grad norm: 0.379926 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:29][INFO] iteration      117/    1000 | consumed samples:        11232 | elapsed time per iteration (ms): 970.0 | throughput (samples/sec/per_device): 12.371 | learning rate: 2.431487E-05 | global batch size:    96 | action loss: 1.991757E-01 | loss scale: 1.0 | grad norm: 0.560236 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:29][INFO] iteration      118/    1000 | consumed samples:        11328 | elapsed time per iteration (ms): 969.8 | throughput (samples/sec/per_device): 12.374 | learning rate: 2.430213E-05 | global batch size:    96 | action loss: 1.906870E-01 | loss scale: 1.0 | grad norm: 0.440675 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:30][INFO] iteration      119/    1000 | consumed samples:        11424 | elapsed time per iteration (ms): 971.0 | throughput (samples/sec/per_device): 12.359 | learning rate: 2.428928E-05 | global batch size:    96 | action loss: 2.261505E-01 | loss scale: 1.0 | grad norm: 0.767452 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:31][INFO] iteration      120/    1000 | consumed samples:        11520 | elapsed time per iteration (ms): 980.1 | throughput (samples/sec/per_device): 12.244 | learning rate: 2.427631E-05 | global batch size:    96 | action loss: 2.424984E-01 | loss scale: 1.0 | grad norm: 0.588707 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:31][INFO] max time across ranks (ms):
+    forward-backward................................: 849.28
+    forward-compute.................................: 276.61
+    backward-compute................................: 571.77
+    batch-generator.................................: 1.54
+    nan-grad-cleanup................................: 13.08
+    grad-clip.......................................: 32.54
+    optimizer.......................................: 83.19
+    optimizer-inner-step............................: 83.08
+    optimizer-scheduler-step........................: 0.07
+    optimizer-zero-grad.............................: 0.86
+[2026-08-23 17:53:32][INFO] iteration      121/    1000 | consumed samples:        11616 | elapsed time per iteration (ms): 969.6 | throughput (samples/sec/per_device): 12.376 | learning rate: 2.426323E-05 | global batch size:    96 | action loss: 2.052913E-01 | loss scale: 1.0 | grad norm: 0.577552 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:33][INFO] iteration      122/    1000 | consumed samples:        11712 | elapsed time per iteration (ms): 972.0 | throughput (samples/sec/per_device): 12.346 | learning rate: 2.425004E-05 | global batch size:    96 | action loss: 1.849661E-01 | loss scale: 1.0 | grad norm: 0.536687 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:34][INFO] iteration      123/    1000 | consumed samples:        11808 | elapsed time per iteration (ms): 976.4 | throughput (samples/sec/per_device): 12.290 | learning rate: 2.423673E-05 | global batch size:    96 | action loss: 1.913534E-01 | loss scale: 1.0 | grad norm: 0.542187 | number of skipped iterations:   0 | number of nan iterations:   0 |
+[2026-08-23 17:53:35][INFO] iteration      124/    1000 | consumed samples:        11904 | elapsed time per iteration (ms): 972.1 | throughput (samples/sec/per_device): 12.345 | learning rate: 2.422331E-05 | global batch size:    96 | action loss: 1.853779E-01 | loss scale: 1.0 | grad norm: 0.687968 | number of skipped iterations:   0 | number of nan iterations:   0 |
