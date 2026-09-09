@@ -1,0 +1,6 @@
+variant	result	attempt	last_step	detail
+dense	success	1	1000	completed
+gradient_row	success	1	1000	completed
+gradient_column	success	1	1000	completed
+gradient_block	success	1	1000	completed
+per_tensor	success	1	1000	completed

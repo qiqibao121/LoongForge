@@ -1,0 +1,150 @@
+{
+  "experiment": "pi05_fp8_granularity_a800_600_1000_v1",
+  "alignment": {
+    "first_step": 301,
+    "last_step": 1000,
+    "steps": 700
+  },
+  "results": [
+    {
+      "variant": "dense",
+      "aligned_steps": 700,
+      "first_step": 301,
+      "last_step": 1000,
+      "final_action_loss": 0.1339544802904129,
+      "mean_action_loss": 0.15787909484335355,
+      "median_action_loss": 0.15587934851646423,
+      "std_action_loss": 0.01554052752680525,
+      "last20_mean_action_loss": 0.14931262508034707,
+      "mae_vs_dense": 0.0,
+      "mape_vs_dense_percent": 0.0,
+      "max_abs_error_vs_dense": 0.0,
+      "max_abs_error_step": 301,
+      "mean_step_time_seconds": 3.6942461390264465,
+      "mean_samples_per_sec": 3.451672392016678,
+      "nan_iterations_max": 0,
+      "skipped_iterations_max": 0
+    },
+    {
+      "variant": "gradient_row",
+      "aligned_steps": 700,
+      "first_step": 301,
+      "last_step": 1000,
+      "final_action_loss": 0.13385547697544098,
+      "mean_action_loss": 0.15787994496524335,
+      "median_action_loss": 0.1557992398738861,
+      "std_action_loss": 0.015525223477438099,
+      "last20_mean_action_loss": 0.14934299439191817,
+      "mae_vs_dense": 0.00024319096335342953,
+      "mape_vs_dense_percent": 0.15534683531350146,
+      "max_abs_error_vs_dense": 0.0022452175617218018,
+      "max_abs_error_step": 582,
+      "mean_step_time_seconds": 12.37529766733991,
+      "mean_samples_per_sec": 0.9993668788589596,
+      "nan_iterations_max": 0,
+      "skipped_iterations_max": 0
+    },
+    {
+      "variant": "gradient_column",
+      "aligned_steps": 700,
+      "first_step": 301,
+      "last_step": 1000,
+      "final_action_loss": 0.1337922066450119,
+      "mean_action_loss": 0.15785169401339122,
+      "median_action_loss": 0.15568041801452637,
+      "std_action_loss": 0.015521939877428398,
+      "last20_mean_action_loss": 0.14932994917035103,
+      "mae_vs_dense": 0.0002902074158191681,
+      "mape_vs_dense_percent": 0.1837870012849913,
+      "max_abs_error_vs_dense": 0.0030274689197540283,
+      "max_abs_error_step": 955,
+      "mean_step_time_seconds": 13.093018983168461,
+      "mean_samples_per_sec": 0.9461363438496161,
+      "nan_iterations_max": 0,
+      "skipped_iterations_max": 0
+    },
+    {
+      "variant": "gradient_block",
+      "aligned_steps": 700,
+      "first_step": 301,
+      "last_step": 1000,
+      "final_action_loss": 0.1343505084514618,
+      "mean_action_loss": 0.15789944631712777,
+      "median_action_loss": 0.15575436502695084,
+      "std_action_loss": 0.015533040823044025,
+      "last20_mean_action_loss": 0.14935243427753447,
+      "mae_vs_dense": 0.0002743731651987348,
+      "mape_vs_dense_percent": 0.1744122081122112,
+      "max_abs_error_vs_dense": 0.001689523458480835,
+      "max_abs_error_step": 838,
+      "mean_step_time_seconds": 12.060416611146648,
+      "mean_samples_per_sec": 1.0266094832228636,
+      "nan_iterations_max": 0,
+      "skipped_iterations_max": 0
+    },
+    {
+      "variant": "per_tensor",
+      "aligned_steps": 700,
+      "first_step": 301,
+      "last_step": 1000,
+      "final_action_loss": 0.13421888649463654,
+      "mean_action_loss": 0.15787030216838632,
+      "median_action_loss": 0.1558179333806038,
+      "std_action_loss": 0.01552690882922194,
+      "last20_mean_action_loss": 0.14927381426095962,
+      "mae_vs_dense": 0.0002427931662116732,
+      "mape_vs_dense_percent": 0.15475526512551357,
+      "max_abs_error_vs_dense": 0.001897662878036499,
+      "max_abs_error_step": 838,
+      "mean_step_time_seconds": 4.684922409749124,
+      "mean_samples_per_sec": 2.6589048837404894,
+      "nan_iterations_max": 0,
+      "skipped_iterations_max": 0
+    }
+  ],
+  "per_tensor_route": {
+    "calibration_steps": 20,
+    "tensor_counts": {
+      "block": 455,
+      "column": 4,
+      "row": 1
+    },
+    "selected_bytes": {
+      "block": 8290549760,
+      "column": 1058144256,
+      "row": 131072
+    },
+    "total_tensors": 460,
+    "total_bytes": 9348825088
+  },
+  "global_runtime_selection": {
+    "gradient_row": {
+      "logged_iteration": 2,
+      "bucket_count": 144,
+      "selected_tensors": 461,
+      "selected_bytes": 9351534592
+    },
+    "gradient_column": {
+      "logged_iteration": 2,
+      "bucket_count": 144,
+      "selected_tensors": 461,
+      "selected_bytes": 9351534592
+    },
+    "gradient_block": {
+      "logged_iteration": 2,
+      "bucket_count": 144,
+      "selected_tensors": 461,
+      "selected_bytes": 9351534592
+    }
+  },
+  "validation": {
+    "all_variants_completed": true,
+    "all_gpus_released": true,
+    "shared_hook_restored": true,
+    "shared_training_args_restored": true,
+    "nan_or_skipped_iterations": false,
+    "precision_only_reference": true,
+    "communication_volume_representative": false,
+    "coverage_caveat": "Global row/column/block selected 461 runtime gradient views and 9,351,534,592 bytes; the strict 2-D per-parameter route contains 460 unique keys and 9,348,825,088 bytes."
+  }
+}
